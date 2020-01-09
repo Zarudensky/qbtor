@@ -1,0 +1,231 @@
+.login-checkbox, .login{
+    display: none;
+}
+.login{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.login:before{
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 380px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #F2F2F2;
+    padding: 25px 50px;
+}
+.login-content h4{
+    color: #FF6633;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 15px;
+}
+.login-content p{
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0;
+}
+.login-content a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: none;
+    text-align: left;
+}
+.butface, .butgoog{
+    display: flex;
+    align-items: center;    
+    width: 280px;
+    height: 35px;
+    border-radius: 2px;
+    padding-left: 50px;
+}
+.butface{
+    background: url(../images/header/icbutface.svg) no-repeat 20px #336699;
+    margin-bottom: 15px;
+}
+.butface:hover{
+    background-color: #3366CC;
+}
+.butgoog{
+    background: url(../images/header/icbutgoog.svg) no-repeat 15px #CC3333;
+}
+.butgoog:hover{
+    background-color: #FF3333;
+}
+.either{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.either p{margin: 0;}
+
+.lineor{
+    width: 140px;
+    height: 2px;
+    background: #FF6633;
+}
+.logemail{
+    display: flex;
+    flex-direction: column;
+}
+.logemail input[type="name"]{
+    width: 308px;
+    height: 33px;
+    border-radius: 2px;
+    border: 1px #CCC solid;
+    margin: 15px 0;
+}
+.logemail input[type="name"]:focus{
+    border-color: #009999;
+}
+.logemail input[type="email"]{
+    width: 308px;
+    height: 33px;
+    border-radius: 2px;
+    border: 1px #CCC solid;
+    margin-bottom: 15px;
+}
+.logemail input[type="email"]:focus{
+    border-color: #009999;
+}
+.logemail input[type="password"]{
+    width: 308px;
+    height: 33px;
+    border-radius: 2px;
+    border: 1px #CCC solid;
+}
+.logemail input[type="password"]:focus{
+    border-color: #009999;
+}
+.logemail input[class="validemail"]{
+    width: 308px;
+    height: 33px;
+    border-radius: 2px;
+    border: 1px #FF3333 solid;
+    margin-bottom: 15px;
+}
+.valid{
+    position: absolute;
+    border: 1px #999 solid;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    right: 55px;
+    top: 228px;
+    padding: 3.5px 10px 3.5px 20px;
+    background: url(../images/index/whoop.svg) no-repeat 10px #FFF;
+}
+.noinput{
+    width: 328px;
+    height: 33px;
+    border-radius: 2px;
+    border: 1px #CCC solid;
+}
+.logemail input[type="submit"]{
+    cursor: pointer;
+    width: 330px;
+    height: 35px;
+    border-radius: 2px;
+    background: #FF6633;
+    color: #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.logemail input[type="submit"]:hover{
+    background: #FF4D1D;
+}
+.logemail input[type="submit"]:active{
+    background: #FF4D1D;
+}
+.logdop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.remember label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 16px;
+    color: #666;
+    font-size: 14px;
+    text-transform: none;
+    cursor: pointer;
+}
+.remember input{
+    display: none;
+}
+.remember input + label{
+    cursor: pointer;
+    padding-left: 0;
+}
+.remember input + label::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    background: url(../images/header/checkbox.svg);
+}
+.remember input:checked + label::before{
+    background-position: 0 -16px;
+}
+.logemail a       {color: #009999;}
+.logemail a:hover {color: #00CCCC;}
+.logemail a:active{color: #FF6633;}
+.registration{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.login-closer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background: url(../images/header/icexit.svg) no-repeat center;
+}
+.login-closer:hover{
+    background: url(../images/header/icexit2.svg) no-repeat center;
+}
+.login-closer:active{
+    background: url(../images/header/icexit3.svg) no-repeat center;
+}
+.login-checkbox:checked + .login{
+    opacity: 1;
+    display: block;
+}

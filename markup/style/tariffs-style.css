@@ -1,0 +1,33 @@
+.content-container{
+	display: flex;
+	justify-content: center;
+}
+.tariffs{
+	margin-top: -170px;
+	width: 730px;
+	height: 325px;
+	background: #fff;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.tariffs-container{
+	text-decoration: none;
+	text-transform: none;
+	text-align: center;
+	margin: 55px 0 55px 0; 
+}
+.tariffs-container h2{
+	color: #336666;
+	font-size: 18px;
+}
+.tariffs-container p{
+	color: #666;
+	font-size: 16px;
+	padding-top: 15px;
+}
+.tariffs-container span{
+	color: #FF6633;
+	font-size: 16px;
+}
+.trffs{
+	padding-top: 35px;
+}

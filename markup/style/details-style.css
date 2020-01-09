@@ -1,0 +1,458 @@
+.details{
+	position: relative;
+	width: 1120px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+	margin-top: -170px;
+	background: #FFF;
+}
+.details-container{
+	display: flex;
+	width: 1120px;
+	height: 150px;
+}
+.saving{
+	position: absolute;
+	top: 46px;
+	right: 430px;
+	display: flex;
+}
+.sumec{
+	display: flex;
+	align-items: flex-end;
+}
+.sumec p{
+	color: #FF6633;
+	font-size: 28px;
+}
+.sumec p.value{
+	font-size: 22px;
+	padding-left: 5px;
+}
+.economy{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 19px;
+}
+.economy p{
+	color: #FF6633;
+	font-size: 16px;
+}
+.scalec{display: flex;}
+
+.scalecw{
+	width: 275px;
+	height: 10px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.scalecor{
+	width: 150px;
+	height: 12px;
+	background: #FF6633;
+}
+.detal-container{
+	display: flex;
+	border-top: 1px solid #ccc;
+}
+.detal-discussion{
+	display: flex;
+	justify-content: center;
+	width: 710px;
+}
+.discussion-block{
+	width: 675px;
+	margin: 20px 0 20px 0;
+}
+.detailp{
+	color: #669999;
+	font-size: 14px;
+	margin: 10px 0 10px 0;
+}
+.scan{
+	text-align: right;
+	margin-bottom: 10px;
+	color: #999;
+	font-size: 14px;
+}
+.tiname{
+	color: #336666;
+	font-size: 16px;
+	margin-bottom: 10px;
+  padding: 0 20px;
+}
+.comment-block-right  {margin-left: 80px;}
+.comment-detail		  {width: 595px;}
+.comment-detail-right {width: 515px;}
+
+.date{
+	display: flex;
+	align-items: flex-end;
+	width: 595px;
+}
+.date-right{
+	display: flex;
+	align-items: flex-end;
+	width: 515px;
+}
+.date span, .date-right span{
+	white-space: nowrap;
+	color: #999;
+	margin-right: 5px;
+}
+.date label,.date-right label{
+	display: block;
+	color: #009999;
+	text-decoration: none;
+	margin-top: 3px;
+	width: 100%;
+}
+.date label:hover,.date-right label:hover
+{color: #00CCCC;}
+
+.date label:active, .date-right label:active
+{color: #FF6633;}
+
+#commentar,#commentar2,#commentar3,
+#commentar4,#commentar5{display: none;}
+
+.change-block > .rechange{display: none;}
+.settings-block > .resetpas{display: none;}
+.settings-block > .resetting{display: none;}
+.commentar-block > .recomment{display: none;}
+.commentar-block > .recomment-right{display: none;}
+.commentar-block > .recomment-comment{display: none;}
+.commentar-block > .recomment-recomment{display: none;}
+
+.change-block > input:checked + .rechange{display: flex;}
+.settings-block > input:checked + .resetpas{display: flex;}
+.settings-block > input:checked + .resetting{display: flex;}
+.commentar-block > input:checked + .recomment{display: flex;}
+.commentar-block > input:checked + .recomment-right{display: flex;}
+.commentar-block > input:checked + .recomment-comment{display: flex;}
+.commentar-block > input:checked + .recomment-recomment{display: flex;}
+
+.recomment{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 17px 0 0 -595px;
+	background: #fff;
+}
+.recomment-right{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 17px 0 0 -515px;
+	background: #fff;
+}
+.recomment-comment{
+	position: relative;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+	margin: 6px 0 15px 0;
+}
+.recomment-recomment{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 6px 0 15px 0;
+}
+.recomment form,.recomment-right form,
+.recomment-comment form{
+	display: flex;
+	flex-direction: column;
+}
+.recomment-clip{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	bottom: 23px;
+	right: 5px;
+	background: url(../images/newtender/clip.svg) no-repeat;
+}
+.recomment-clip:hover{
+	background: url(../images/newtender/clip2.svg) no-repeat;
+}
+.recomment-clip:active{
+	background: url(../images/newtender/clip3.svg) no-repeat;
+}
+.recomment textarea{
+	resize: none;
+	width: 493px;
+	height: 35px;
+	border: 1px solid #ccc;
+}
+.recomment-right textarea{
+	resize: none;
+	width: 413px;
+	height: 35px;
+	border: 1px solid #ccc;
+}
+.recomment-comment textarea{
+	resize: none;
+	width: 923px;
+	height: 35px;
+	border: 1px solid #ccc;
+}
+.rechange textarea:hover,
+.recomment textarea:hover,
+.recomment-right textarea:hover,
+.recomment-comment textarea:hover,
+.comment-call textarea:hover{border-color: #009999;}
+
+.rechange textarea:focus,
+.recomment textarea:focus,
+.recomment-right textarea:focus,
+.recomment-comment textarea:focus,
+.comment-call textarea:focus{border-color: #009999;}
+
+.comment-call{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 675px;
+}
+.comment-call textarea{
+	resize: none;
+	width: 573px;
+	height: 54px;
+	border: 1px solid #ccc;
+}
+.detal-rates{
+	display: flex;
+	justify-content: center;
+	width: 410px;
+	background: #E6E6E6;
+}
+.rates-block {
+  width: 410px;
+  margin: 20px 0 20px 0;
+}
+.line-start{
+	width: 410px;
+	height: 1px;
+	background: #ccc;
+}
+.rate-last, .rate-win, .rate-lost{
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 410px;
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+}
+.rate-last{background: #F2F2F2;}
+.rate-win{background: #CCFFCC;}
+.rate-lost{background: #FFCCCC;}
+.price-lwl{	margin-left: 20px;}
+
+.rate{
+	display: flex;
+	align-items: center;
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+  padding: 0 20px;
+}
+.rate-start{
+	display: flex;
+	align-items: center;
+	height: 80px;
+  padding: 0 20px;
+}
+.price, .price-lwl{
+	display: flex;
+	align-items: flex-end;
+	width: 150px;
+	color: #336666;
+	font-size: 28px;
+}
+.price p.value, .price-lwl p.value{
+	font-size: 22px;
+	padding-left: 5px;
+}
+.seller-info{
+	display: flex;
+	flex-direction: column;
+	width: 140px;
+	height: 71px;
+	font-size: 14px;
+}
+.comment-last-comment{
+	padding: 5px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #F2F2F2;
+	margin-bottom: 15px;
+}
+.comment-last{
+	margin: 0;
+}
+.rate{
+  position: relative;
+}
+#gray, .gray{
+  color: #ccc;
+}
+.gray a{
+  color: #ccc;
+}
+.filter img{
+  filter: grayscale(100%) opacity(30%);
+  -webkit-filter: grayscale(100%) opacity(30%);
+}
+.canceled{
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  font-size: 22px;
+  color: #F63;
+  z-index: 99;
+  text-transform: uppercase;
+}
+#gray2, .gray2{
+  color: #999;
+}
+.gray2 a{
+  color: #999;
+}
+.filter2 img{
+  filter: grayscale(100%) opacity(50%);
+  -webkit-filter: grayscale(100%) opacity(50%);
+}
+.canceled2{
+  position: absolute;
+  top: 42px;
+  left: 0;
+  display: block;
+  width: 105px;
+  height: 2px;
+  background: #999;
+  z-index: 99;
+}
+.gray3 a{
+  color: #e6e6e6;
+}
+.canceled3{
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  font-size: 14px;
+  color: #666;
+  z-index: 99;
+}
+.blocker{
+  min-height: 10px;
+  margin-left: 80px;
+  padding: 5px;
+  background: #e6e6e6;
+  border-radius: 13px;
+  text-align: center;
+}
+.none p{
+  display: none;
+}
+.cancel {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.cancel svg{
+  display: block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  fill: #999999;
+}
+.cancel svg:hover{
+  fill: #00CCCC;
+}
+.tiname span{
+  font-size: 14px;
+  color: #999;
+}
+.tiname p{
+  text-align: center;
+}
+.block-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 65px;
+  padding-left: 20px;
+}
+.block-menu p{
+  color: #666;
+  font-size: 14px;
+}
+.seller-info{
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 20px;
+}
+.seller-info span{
+  color: #999;
+  font-size: 14px;
+}
+.aname{
+  display: flex;
+  justify-content: space-between;
+}
+.aname img{
+  cursor: pointer;
+}
+.photo {
+  margin-left: 20px;
+}
+.commentar{
+  resize: none;
+  border: 1px solid #ccc;
+}
+.commentar:hover{
+  border-color: #009999;
+}
+.commentar:focus{
+  border-color: #009999;
+}
+.seller-info input {
+  cursor: pointer;
+  background: none;
+  font-size: 14px;
+  text-transform: none;
+  color: #009999;
+  margin: 0;
+  text-align: right;
+}
+.seller-info input:hover{
+  color: #00CCCC;
+}
+.gfd{
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  margin-right: 20px;
+}
+.gfd img{
+  margin-top: 9px;
+}
+.seller-info2{
+  height: 65px;
+  margin-right: -10px;
+}
+.seller-info2 textarea{
+  height: 40px;
+
+}
+.exit{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  fill: #999;
+}

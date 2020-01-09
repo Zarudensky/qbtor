@@ -1,0 +1,146 @@
+.budget-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 195px;
+  width: 730px;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.balance-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 680px;
+  padding: 25px;
+}
+.balance-block .offera {
+  margin-left: 20px;
+}
+.balance-block form {
+  display: flex;
+}
+.offera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 35px;
+  border-radius: 2px;
+  background: #009999;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+}
+.offera:hover {
+  background: #00CCCC;
+}
+
+.offera:active {
+  color: #FF6633;
+}
+.account{
+  display: flex;
+  align-items: flex-end;
+}
+.account .value{
+  color: #FF6633;
+  font-size: 22px;
+  padding-left: 5px;
+}
+.score{
+  color: #666;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 68px 1px 20px;
+}
+.balance{
+  color: #FF6633;
+  font-size: 28px;
+}
+
+.winningtender, .refillcheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.extractinfo{
+  width: 680px;
+  height: 50px;
+  font-size: 14px;
+}
+.extractingup{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  background: #CCC;
+}
+.extractingup p{
+  color: #006666;
+}
+.desc {
+  width: 150px;
+  margin-left: 20px;
+}
+.bal {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+}
+.link {
+  display: flex;
+  justify-content: flex-end;
+  width: 250px;
+  margin-right: 20px;
+}
+.link a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #009999;
+  text-decoration: none;
+}
+.link a:hover {
+  color: #009999;
+  text-decoration: underline;
+}
+
+.link a:active {
+  color: #FF6633;
+}
+
+.tim {
+  text-align: right;
+  width: 250px;
+  margin-right: 20px;
+}
+.extractingdown{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  background: #E6E6E6;
+}
+.extractingdown p{
+  color: #666;
+}
+
+.refillcheck .extractingup p {
+  color: #FF6633;
+}
+.more{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.more a{
+  color: #FF6633;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

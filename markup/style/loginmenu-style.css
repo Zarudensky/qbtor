@@ -1,0 +1,105 @@
+.cabinet_menu-block{
+    padding: 0;
+}
+.cabinet_menu-block li ul{
+    list-style: none;
+    width: 195px;
+    display: none;
+    position: absolute;
+    margin-top: 75px;
+    padding: 0px;
+}
+.cabinet_menu-block li ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 31.5px;
+    background-color: rgba(0, 102, 102, 0.9);
+    cursor: pointer;
+}
+.cabinet_menu-block li:hover ul{
+    display: block;
+}
+.cabinet_menu-block li{
+    list-style: none;
+    position: relative;
+}
+.cab{
+    width: 195px;
+    height: 75px;
+}
+.cab a{
+    text-transform: none;
+}
+.cab a:hover{
+    color: #fff;
+}
+.cabinet_menu{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.cabinet_menu-block:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.cabinet_menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.cabname{
+    max-width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.cabin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 75px;
+}
+.cabinet{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.cabinet_menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.cabinet_menu li:hover a{
+    color: #fff;
+}
+.cabinet_menu li:active a{
+    color: #FF6633;
+}
+.badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    background: #FF6633;
+    z-index: 2;
+    cursor: pointer;
+}
+.badgeup{margin-left: 36px;}
+.badgedown{right: 7.25px;top: 7.25px}
+
+.icon_cabinet_menu{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: url(../images/photo/phmruy.svg) no-repeat center;
+    background-size: cover;   
+}

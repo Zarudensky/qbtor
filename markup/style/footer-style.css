@@ -1,0 +1,71 @@
+html, body, .wrap {height: 100%;}
+body > .wrap {height: auto; min-height: 100%;}
+#main {padding-bottom: 50px;}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.footer{
+	display: flex;
+	width: 100%;
+	height: 50px;
+	min-width: 1220px;
+	background: linear-gradient(to top, rgba(0, 64, 64, 0.9),rgba(0, 128, 128, 0.9));
+	position: relative;
+	margin-top: -50px;
+	clear: both;
+}
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	width: 1120px;
+	height: 50px;
+	margin: 0 auto;
+}
+.footer-container a, .footer-container span{
+	color: #99CCCC;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: none;
+}
+.footer-menu-block{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.footer-menu-block a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	padding-right: 65px;
+}
+.footer-menu-block a:hover{
+	color: #FFF;
+}
+.footer-menu-block a:active{
+	color: #FF6633;
+}
+.footer-info-block{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.email{
+	padding-left: 65px;
+}
+.phone,.email{
+	display: flex;
+	align-items: center;
+}
+.phone img,.email img{
+	padding-right: 10px;
+}

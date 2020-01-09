@@ -1,0 +1,177 @@
+.nocard{
+	position: relative;
+}
+.nocard p{
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	font-family: Helvetica, arial, sans-serif;
+	font-style: normal;
+	font-size: 25px;
+	font-weight: normal;
+	color: #666;
+}
+.nocard_img{
+	text-align: center;
+}
+.nocard_img img{
+	width: 243px;
+	height: 242px;
+	padding: 25px 0 25px 0;
+}
+.lift{
+	position: absolute;
+	margin: 120px 0 0 612px;
+	width: 7px;
+	height: 205px;
+	z-index: 1;
+}
+.increase{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 14px;
+	height: 21px;
+	position: relative;
+  	z-index: 2;
+  	animation: increase 2s ease-in 2s  both;
+	-webkit-animation: increase 2s ease-in 2s both;
+}
+.tear{
+	width: 7px;
+	height: 10px;
+    animation: tear 2s ease-in 0s  both;
+	-webkit-animation: tear 2s ease-in 0s both;
+}
+.nocard_message{
+	position: absolute;
+	margin-top: 10px;
+	width: 1120px;
+	height: 20px;
+	z-index: 2;
+	background: #F2F2F2;
+}
+.message{
+	position: absolute;
+	z-index: 3;
+	width: 1120px;
+	height: 29px;
+	animation: message 0s ease-in 4s  both;
+	-webkit-animation: message 0s ease-in 4s both;
+}
+@keyframes tear {
+	from {transform: none;}
+	to {transform: scale(1.5);transform-origin: 50% 0px;}
+}
+@-webkit-keyframes tear {
+	from {transform: none;}
+	to {transform: scale(1.5);}
+}
+@keyframes increase {
+	from {top: 0;}
+	to {top: 190px;}
+}
+@-webkit-keyframes increase {
+	from {top: 0;}
+	to {top: 190px;}
+}
+@keyframes message {
+	from {color: #666;}
+	to {color: #0033FF;}
+}
+@-webkit-keyframes message {
+	from {color: #666;}
+	to {color: #0033FF;}
+}
+
+
+.test{
+	display: flex;
+	margin: 200px 0 0 575px;
+	width: 82px;
+	height: 12px;
+	position: absolute;
+}
+.test_one{
+	position: absolute;
+	width: 20px;
+	height: 12px;
+	background: #666;
+	border-radius: 6px;
+	animation: test_one 1s ease 4s  both;
+}
+@keyframes test_one{
+	from {
+		transform: matrix(1, -0.8, 0.5, 1, 0, 8);
+		transform-origin: 14px center;
+	}
+	to {
+		transform: matrix(1, 0.8, -0.5, 1, 0, -8);
+	    transform-origin: 14px center;
+	}
+}
+.test_two{
+	position: absolute;
+	margin-left: 8px;
+	width: 30px;
+	height: 12px;
+	background: #666;
+	border-radius: 6px;
+	animation: test_two 1s ease 4s  both;
+}
+@keyframes test_two{
+	from {
+		transform: matrix(1, -0.4, 0.3, 1, 0, 0);
+		transform-origin: 24px center;
+	}
+	to {
+		transform: matrix(1, 0.4, -0.3, 1, 0, 0);
+	    transform-origin: 24px center;
+	}
+}
+.test_three{
+	position: relative;
+	margin-left: 26px;
+	width: 30px;
+	height: 12px;
+	background: #666;
+	border-radius: 6px;
+}
+.test_four{
+	position: absolute;
+	margin-left: -12px;
+	width: 30px;
+	height: 12px;
+	background: #666;
+	border-radius: 6px;
+	animation: test_four 1s ease 4s  both;
+}
+@keyframes test_four{
+	from {
+		transform: matrix(1, 0.4, -0.3, 1, 0, 0);
+		transform-origin: 6px center;
+	}
+	to {
+		transform: matrix(1, -0.4, 0.3, 1, 0, 0);
+	    transform-origin: 6px center;
+	}
+}
+.test_five{
+	position: absolute;
+	margin-left: 6px;
+	width: 20px;
+	height: 12px;
+	background: #666;
+	border-radius: 6px;
+	animation: test_five 1s ease 4s  both;
+}
+@keyframes test_five{
+	from {
+		transform: matrix(1, 0.8, -0.5, 1, 0, 8);
+		transform-origin: 6px center;
+	}
+	to {
+		transform: matrix(1, -0.8, 0.5, 1, 0, -8);
+	    transform-origin: 6px center;
+	}
+}

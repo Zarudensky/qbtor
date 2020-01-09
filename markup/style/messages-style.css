@@ -1,0 +1,105 @@
+.messages-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 195px;
+  width: 730px;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.message-block{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #CCC;
+  padding: 15px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.message-block:hover{
+  background: #e7e8ec;
+}
+.message-photo{
+  height: 45px;
+}
+.message-photo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 15px 0 20px;
+}
+.message-message{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+  width: 580px;
+}
+.message-message p{
+  color: #099;
+}
+.message-button{
+  width: 450px;
+}
+.massage-name{
+  display: flex;
+}
+.massage-name{
+  display: flex;
+}
+.massage-name p{
+  margin-right: 5px;
+}
+.massage-date{
+  display: flex;
+}
+#dat{
+  margin-right: 5px;
+  color: #999;
+}
+.message-message p:hover{
+  text-decoration: underline;
+}
+.message-message span{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #666;
+}
+.date-comment span {
+  white-space: nowrap;
+  color: #999;
+  margin-right: 5px;
+}
+.archive{
+  width: 65px;
+}
+.message-block:hover .archive{
+  background: url(../images/icarchive1.svg) no-repeat center;
+}
+.button-block{
+  display: flex;
+  align-items: center;
+
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background: #009999;
+  margin-right: 20px;
+}
+.button:hover {
+  background: #00CCCC;
+}

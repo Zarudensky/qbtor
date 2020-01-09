@@ -1,0 +1,207 @@
+.navigation_index{
+	display: flex;
+	width: 100%;
+	height: 475px;
+	min-width: 1220px;
+	background: #006666;
+}
+.navigation_index-container{
+	width: 1120px;
+	height: 475px;
+	margin: 0 auto;
+	padding-top: 75px;
+}
+.title-index{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1120px;
+	height: 75px;
+	font-size: 22px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #FFF;
+	text-shadow: 2px 2px 0px #003333;
+	margin: 0 auto;
+}
+.mans{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	color: #FFF;
+	margin-top: 15px;
+}
+.mans img{margin-bottom: 15px;}
+.man1, .man2{margin-right: 45px;}
+
+.button1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 35px;
+}
+.button1 a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 270px;
+	height: 50px;
+	border-radius: 2px;
+	background: #FF6633;
+	color: #FFF;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 2px 2px 0px #003333;
+}
+.button1 a:hover{background: #FF4D1D;}
+
+.button1 a:active{
+	background: #FF4D1D;
+	margin: 2px 0 0 2px;
+	box-shadow: none;
+}
+.navigation{
+	display: flex;
+	width: 100%;
+	height: 265px;
+	min-width: 1220px;
+	background: #006666;
+}
+.navigation-container{
+	width: 1120px;
+	height: 190px;
+	margin: 0 auto;
+	padding-top: 75px;
+}
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1120px;
+	height: 75px;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+	margin: 0 auto;
+}
+.navigation-menu{
+	display: flex;
+	width: 750px;
+	height: 115px;
+}
+.buyer,.seller,.comments,.answer,
+.settings,.profile,.tabalance,.messages{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 115px;
+}
+.buyer a,.seller a,.comments a,.answer a,
+.settings a,.profile a,.tabalance a,.messages a{
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	height: 28px;
+	color: #99CCCC;
+	font-size: 14px;
+	text-decoration: none;
+	padding-top: 87px;
+}
+.fon a{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.fon a:hover{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.fon a:active{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.buyer{
+	width: 150px;
+	height: 115px;
+	background: url(../images/navigation/icbuyer1.svg);
+}
+.buyer :hover{
+	background: url(../images/navigation/icbuyer2.svg);
+	color: #FFF;
+}
+.seller{
+	width: 150px;
+	height: 115px;
+	background: url(../images/navigation/icseller1.svg);
+}
+.seller :hover{
+	background: url(../images/navigation/icseller2.svg);
+	color: #FFF;
+}
+.comments{
+	width: 150px;
+	height: 115px;
+	background: url(../images/navigation/iccomments1.svg);
+}
+.comments :hover{
+	background: url(../images/navigation/iccomments2.svg);
+	color: #FFF;
+}
+.answer{
+	width: 150px;
+	height: 115px;
+	background: url(../images/navigation/icanswer1.svg);
+}
+.answer :hover{
+	background: url(../images/navigation/icanswer2.svg);
+	color: #FFF;
+}
+.settings{
+	width: 150px;
+	height: 115px;
+	background: url(../images/navigation/icsettings1.svg);
+}
+.settings :hover{
+	background: url(../images/navigation/icsettings2.svg);
+	color: #FFF;
+}
+.profile{
+	width: 150px;
+	height: 115px;
+	background: url(../images/navigation/icprofile1.svg);
+}
+.profile :hover{
+	background: url(../images/navigation/icprofile2.svg);
+	color: #FFF;
+}
+.tabalance{
+    width: 150px;
+    height: 115px;
+    background: url(../images/navigation/icbudget1.svg);
+}
+.tabalance :hover{
+    background: url(../images/navigation/icbudget2.svg);
+    color: #FFF;
+}
+.messages{
+  width: 150px;
+  height: 115px;
+  background: url(../images/navigation/icmessages1.svg);
+}
+.messages :hover{
+  background: url(../images/navigation/icmessages2.svg);
+  color: #FFF;
+}
+.buyer :active,.seller :active,.comments :active,
+.answer :active,.settings :active,.profile :active,.tabalance :active{color: #FF6633;}

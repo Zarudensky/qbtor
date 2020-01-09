@@ -1,0 +1,297 @@
+.content{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	min-width: 1220px;
+}
+.content-container{
+	width: 1120px;
+	height: 100%;
+	padding: 55px 0 55px 0;
+}
+.other{
+	text-align: center;
+	margin-bottom: -25px;
+}
+.other a{
+	color: #FF6633;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.cardab1,.cardab2,.cardab3,.cardab4,.cardab5,.cardab6{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1120px;
+	background: #FFF;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.cardab1,.cardab2,.cardab4,.cardab5{
+	margin-bottom: 30px;
+}
+h1.txtab{
+	position: absolute;
+	color: #666;
+	font-size: 22px;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+}
+h2.txtabt,h2.txtabth{
+	position: absolute;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+.card-container{
+	width: 1080px;
+	height: 100%;
+	position: relative;
+}
+.card-container img{padding-top: 25px;}
+
+.txt{
+	width: 1080px;
+	height: 100%;
+	color: #666;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: left;
+	padding: 25px 0 45px;
+}
+.nophoto{
+	width: 65px;
+	height: 65px;
+	margin-right: 15px;
+}
+.comment-recall{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 1120px;
+}
+.comment-recall textarea{
+	resize: none;
+	width: 1018px;
+	height: 54px;
+	border: 1px solid #ccc;
+}
+textarea[placeholder]{
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #666;
+}
+input[placeholder],input[value]{
+	padding: 0 10px 0 10px;
+	font-size: 14px;
+	color: #666;
+}
+textarea[placeholder]::-webkit-input-placeholder {color:#999;}
+textarea[placeholder]:-moz-placeholder           {color:#999;}
+textarea[placeholder]:-ms-input-placeholder	     {color:#999;}
+input[placeholder]::-webkit-input-placeholder {color:#999;}
+input[placeholder]:-moz-placeholder           {color:#999;}
+input[placeholder]:-ms-input-placeholder	  {color:#999}
+
+.clip{top: 165px; right: 5px;}
+.recomment-clip{bottom: 23px; right: 5px;}
+.comment-clip{bottom: 28px; right: 5px;}
+
+.clip, .recomment-clip, .comment-clip{
+	position: absolute;
+	z-index: 10;
+	width: 19px;
+	height: 20px;
+	background: url(../images/newtender/clip.svg) no-repeat center;
+}
+.clip:hover, .recomment-clip:hover, .comment-clip:hover{
+	background: url(../images/newtender/clip2.svg) no-repeat center;
+}
+.clip:active, .recomment-clip:active, .comment-clip:active{
+	background: url(../images/newtender/clip3.svg) no-repeat center;
+}
+.send input{
+	cursor: pointer;
+	background: none;
+	font-size: 14px;
+	text-transform: none;
+	color: #009999;
+	margin: 0;
+	float: right;
+}
+.sorting{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: -25px 0 25px 0;
+}
+.sorting a{
+	cursor: pointer;
+	background: none;
+	font-size: 14px;
+	text-transform: none;
+	text-decoration: none;
+	color: #009999;
+}
+.sorting img{
+	width: 1px;
+	height: 20px;
+	padding: 0 25px 0 25px;
+}
+#back-top{
+	position: fixed;
+  bottom: 60px;
+	right: 10px;
+	z-index: 999;
+}
+#back-top a{
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: url(../images/arrowup.svg) no-repeat center #009999;
+}
+#back-top a:hover{
+	background: url(../images/arrowup.svg) no-repeat center #00CCCC;
+}
+#back-top a:active{
+	background: url(../images/arrowup2.svg) no-repeat center #00CCCC;
+}
+.align{margin-top: -25px;}
+
+.cardab1 .txtab{left: 545px;top: 27px;}
+.cardab2 .txtab{left: 548px;top: 32px;}
+.cardab3 .txtab{left: 538px;top: 27px;}
+
+.cardab1 .txtabt{left: 20px;top: 222px;}
+.cardab1 .txtabth{right: 20px;top: 217px;}
+
+.cardab2 .txtabt{left: 20px;top: 229px;}
+.cardab2 .txtabth{right: 20px;top: 224px;}
+
+.cardab3 .txtabt{left: 20px;top: 222px;}
+.cardab3 .txtabth{right: 20px;top: 217px;}
+
+.cardab4 .txtab{left: 545px;top: 27px;}
+.cardab5 .txtab{left: 538px;top: 27px;}
+.cardab6 .txtab{left: 535px;top: 27px;}
+
+.cardab4 .txtabt{left: 20px;top: 222px;}
+.cardab4 .txtabth{right: 20px;top: 217px;}
+
+.cardab5 .txtabt{left: 20px;top: 223px;}
+.cardab5 .txtabth{right: 20px;top: 218px;}
+
+.cardab6 .txtabt{left: 20px;top: 223px;}
+.cardab6 .txtabth{right: 20px;top: 218px;}
+
+.comment-block, .comment-block-right,
+.comment-block-comment, .comment-last{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-size: 14px;
+	text-transform: none;
+	margin-bottom: 15px;
+}
+.comment-block-comment{
+	position: relative;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+	background: #fff;
+}
+.comment-content-comment{
+	width: 1025px;
+	padding-right: 15px;
+}
+
+.comment-content{width: 1040px;}
+.comment{min-height: 47px;}
+.comment span,.comment-comment span{color: #666;}
+
+.comment-comment{
+	margin: 5px 0;
+	max-width: 1005px;
+	min-height: 33px;
+}
+.comment a,.comment-comment a,
+.aname a,.dinfcom a{
+	color: #009999;
+	text-decoration: none;
+}
+.date-comment{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.date-comment span{
+	color: #999;
+	margin-right: 5px;
+}
+.date-comment label{
+	display: block;
+	color: #009999;
+	text-decoration: none;
+	cursor: pointer;
+}
+.date-comment label:hover{
+	color: #009999;
+	text-decoration: underline;
+}
+.date-comment label.backwrite{
+	display: block;
+	color: #FF6633;
+	text-decoration: none;
+}
+.date-comment label.backwrite:hover{
+	color: #FF4D1D;
+	text-decoration: underline;
+}
+.photo{
+	width: 65px;
+	height: 65px;
+	margin-right: 15px;
+}
+.date p{
+	white-space: nowrap;
+	color: #999;
+	margin-top: 3px;
+}
+.question-block{margin-bottom: 15px;}
+
+.question span{
+	font-size: 16px;
+	color: #006666;
+}
+.question p{
+	font-size: 14px;
+	color: #666;
+}
+.send input:hover{color: #00CCCC;}
+.send input:active{color: #FF6633;}
+
+.sorting a[name="default"]{cursor: default; color: #FF6633;}
+.sorting a[name="default"]:hover{text-decoration: none;}
+.sorting a[name="default"]:active{text-decoration: none;color: #FF6633;}
+
+.comment-recall textarea:hover{border-color: #009999;}
+.comment-recall textarea:focus{border-color: #009999;}
+
+.more a:hover, .other a:hover, .sorting a:hover,
+.comment a:hover,.comment-comment a:hover,
+.aname a:hover,.dinfcom a:hover{
+	text-decoration: underline;
+}
+
+.more a:active, .other a:active, .sorting a:active, .comment a:active,
+.comment-comment a:active,.aname a:active,
+.dinfcom a:active,.date-comment label:active,
+.date-comment label.backwrite:active{
+	text-decoration: underline;
+	color: #FF4D1D;
+}

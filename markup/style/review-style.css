@@ -1,0 +1,85 @@
+.review {
+  margin: -170px 0 0 195px;
+  width: 730px;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 346px;
+  font-size: 14px;
+}
+.review-block{
+  display: flex;
+}
+.review-info-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.review-container a {
+  color: #099;
+  cursor: pointer;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.review-info-block span {
+  color: #999;
+  margin-right: 5px;
+}
+.review-info-block p {
+  color: #666;
+  margin-right: 5px;
+}
+.review-info-block div{
+  display: flex;
+}
+.review-text{
+  display: flex;
+  margin: 20px;
+}
+.review-text span{
+  font-size: 14px;
+  color: #666;
+
+}
+
+
+.message-form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  background: #E6E6E6;
+}
+.message-form textarea {
+  resize: none;
+  width: 663px;
+  height: 53px;
+  border: 1px solid #CCC;
+}
+.message-form textarea:hover {
+  border-color: #099;
+}
+.message-form textarea:focus {
+  border-color: #099;
+}
+
+textarea[placeholder] {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #666;
+}
+.rating-comment {
+  width: 690px;
+}
+.photo{
+  margin: 20px 15px 0 20px ;
+}

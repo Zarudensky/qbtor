@@ -1,0 +1,162 @@
+.newtender{
+	margin: -170px 0 0 195px;
+	width: 730px;
+	background: #fff;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.newtender-container{
+	display: flex;
+	justify-content: center;
+}
+.newtd{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 330px;
+	margin: 55px 0;
+}
+.newtd input[name="name"]{
+	width: 308px;
+	height: 33px;
+	border-radius: 2px;
+	border: 1px #CCC solid;
+	margin-bottom: 15px;
+}
+.newtd textarea{
+	resize: none;
+	width: 308px;
+	height: 128px;
+	border-radius: 2px;
+	border: 1px #CCC solid;
+	margin-bottom: 15px;
+}
+.newtd textarea:hover, .newtd input:hover{
+	border-color: #009999;
+}
+.newtd .category .categorys{
+	margin: 0;
+}
+.newtd label[for="category-container"]{
+	width: 313px;
+	height: 33px;
+	border-radius: 2px;
+	border: 1px #CCC solid;
+	margin: 0;
+	background: url(../images/filter/arrowdown.svg) no-repeat 305px #FFF;
+}
+.newtd label[for="category-container"]:hover{
+	background: url(../images/filter/arrowdown2.svg) no-repeat 305px #FFF;
+}
+.newtd label[for="category-container"]:active{
+	background: url(../images/filter/arrowdown.svg) no-repeat 305px #FFF;
+}
+.newtd .region{
+	margin-top: 15px;
+}
+.newtd .regions{
+	margin-left: -275px;
+}
+.newtd label[for="region-container"]{
+	width: 313px;
+	height: 33px;
+	border-radius: 2px;
+	color: #666;
+	border: 1px #CCC solid;
+	margin: 0;
+	background: url(../images/filter/arrowdown.svg) no-repeat 305px #FFF;
+}
+.newtd label[for="region-container"]:hover{
+	background: url(../images/filter/arrowdown2.svg) no-repeat 305px #FFF;
+}
+.newtd label[for="region-container"]:active{
+	background: url(../images/filter/arrowdown.svg) no-repeat 305px #FFF;
+}
+.budget{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	margin-top: 15px;
+	width: 330px;
+	height: 35px;
+}
+.budget label, .timetoend label{
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: none;
+	color: #666;
+	margin: 10.5px 0;
+	cursor: pointer;
+}
+.budget input{
+	width: 103px;
+	height: 33px;
+	border-radius: 2px;
+	border: 1px #CCC solid;
+	-moz-appearance: textfield;
+}
+.budget input:hover{
+	border-color: #009999;
+}
+.budget input::-webkit-outer-spin-button,
+.budget input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+}
+.timetoend{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	margin-top: 15px;
+	width: 330px;
+	height: 35px;
+	cursor: pointer;
+}
+.icon_calendar{
+	perspective: 1000;
+	position: relative;
+    width: 22px;
+    height: 22px;
+    z-index: 1;
+    margin: auto 0;
+}
+#timeto{
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: none;
+	color: #FF6633;
+	margin: 10.5px 0;
+}
+#timeto:hover{
+	text-decoration: underline;
+	color: #009999;
+}
+#timeto:active{
+	text-decoration: underline;
+	color: #FF6633;
+}
+.timetoend:hover #timeto{
+	color: #009999;
+}
+.timetoend:active #timeto{
+	color: #FF6633;
+}
+.timetoend:hover .image{
+	transform: rotateY(180deg);
+}
+.newtd input[type="submit"]{
+	cursor: pointer;
+	width: 330px;
+	height: 35px;
+	border-radius: 2px;
+	background: #009999;
+	color: #FFF;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 15px;
+}
+.newtd input[type="submit"]:hover{
+	background: #00CCCC;
+}
+.newtd input[type="submit"]:active{
+	color: #FF6633;
+}

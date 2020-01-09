@@ -1,0 +1,85 @@
+.nocard{
+	position: relative;
+}
+.nocard p{
+	font-size: 25px;
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	color: #666;
+}
+.nocard_img{
+	text-align: center;
+}
+.nocard_img img{
+	width: 243px;
+	height: 242px;
+	padding: 25px 0 25px 0;
+}
+.lift{
+	position: absolute;
+	margin: 120px 0 0 612px;
+	width: 7px;
+	height: 205px;
+	z-index: 1;
+}
+.increase{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 14px;
+	height: 21px;
+	position: relative;
+  	z-index: 2;
+  	animation: increase 2s ease-in 2s  both;
+	-webkit-animation: increase 2s ease-in 2s both;
+}
+.tear{
+	width: 7px;
+	height: 10px;
+    animation: tear 2s ease-in 0s  both;
+	-webkit-animation: tear 2s ease-in 0s both;
+}
+.nocard_message{
+	position: absolute;
+	margin-top: 10px;
+	width: 1120px;
+	height: 20px;
+	z-index: 2;
+	background: #F2F2F2;
+}
+.message{
+	position: absolute;
+	z-index: 3;
+	width: 1120px;
+	height: 29px;
+	animation: message 0s ease-in 4s  both;
+	-webkit-animation: message 0s ease-in 4s both;
+}
+.ncc{
+	height: 25px;
+}
+@keyframes tear{
+	from {transform: none;}
+	to {transform: scale(1.5);transform-origin: 50% 0px;}
+}
+@-webkit-keyframes tear{
+	from {transform: none;}
+	to {transform: scale(1.5);}
+}
+@keyframes increase{
+	from {top: 0;}
+	to {top: 190px;}
+}
+@-webkit-keyframes increase{
+	from {top: 0;}
+	to {top: 190px;}
+}
+@keyframes message{
+	from {color: #666;}
+	to {color: #0033FF;}
+}
+@-webkit-keyframes message{
+	from {color: #666;}
+	to {color: #0033FF;}
+}
