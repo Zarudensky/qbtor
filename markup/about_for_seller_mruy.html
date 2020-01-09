@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/loginmenu-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+		<title>О сайте</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index_mruy.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers_mruy.html">о сайте</a>
+						<a href="filter_mruy.html">тендеры</a>
+						<a href="tariffs_mruy.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cabinet_menu-block">
+					    <li class="cab">
+							<a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+								<div class="badge badgeup">3</div>
+								<div class="icon_cabinet_menu"></div>
+							</div>Мистер Уй</a>
+							<ul class="cabinet_menu">
+								<li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+								<li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+								<li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+                <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+								<li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+								<li><a href="about_for_seller.html">Выход</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">КАК ЭТО РАБОТАЕТ ДЛЯ ПРОДАВЦА</h2>
+					<div class="navigation-menu">
+						<div class="buyer">
+							<a href="about_for_buyers_mruy.html">Для покупателя</a>
+						</div>
+						<div class="seller fon">
+							<a href="about_for_seller_mruy.html">Для продавца</a>
+						</div>
+						<div class="comments">
+							<a href="about_comments_mruy.html">Отзывы</a>
+						</div>
+						<div class="answer">
+							<a href="about_answer_mruy.html">Вопрос/Ответ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="cardab4">
+							<div class="card-container">
+								<h1 class="txtab">Найдите<br>подходящий<br>тендер!</h1>
+								<h2 class="txtabt">Перейдите в раздел «Тендеры»</h2>
+								<h2 class="txtabth">Используйте фильтр для поиска нужного тендера</h2>
+								<img src="images/about/imabsell1.svg" alt="image">
+								<p class="txt">Для поиска покупателя перейдите во вкладку «Тендеры». С помощью фильтра выберите необходимые параметры поиска (категорию товара, название товара, модель, город, цену, рейтинг покупателя).</p>
+							</div>
+						</div>
+						<div class="cardab5">
+							<div class="card-container">
+								<h1 class="txtab">Сделайте ставку,<br>предложив<br>наименьшую цену</h1>
+								<h2 class="txtabt">Убедитесь, что этот товар есть у вас в наличии</h2>
+								<h2 class="txtabth">Делая ставку, учитывайте стоимость</h2>
+								<img src="images/about/imabsell2.svg" alt="image">
+								<p class="txt">После того как вы нашли подходящий тендер, убедитесь, что этот товар есть у вас в наличии и соответствует всем описаниям покупателя. Только после этого принимайте участие в торгах и предлагайте свою ставку (цену). Обратите внимание на то, что покупатель указывает максимальный бюджет, который он готов потратить без учета оплаты за доставку. Поэтому, делая ставку, учитывайте стоимость доставки, ели она необходима. Как только ставка сделана, вы автоматически становитесь участником тендера, процесс которого вы сможете наблюдать в разделе «Мой кабинет» во вкладке «Мои продажи». Здесь же у вас есть возможность посредством комментариев связаться с покупателем и обсудить товар, детали сделки.</p>
+							</div>
+						</div>
+						<div class="cardab6">
+							<div class="card-container">
+								<h1 class="txtab">Свяжитесь с<br>покупателем и<br>завершите сделку.</h1>
+								<h2 class="txtabt">В конце тендера вам на e-mail придут данные о покупателе</h2>
+								<h2 class="txtabth">Обсудите форму оплаты и доставьте товар</h2>
+								<img src="images/about/imabsell3.svg" alt="image">
+								<p class="txt">В случае выигрыша вами тендера, свяжитесь с покупателем и обсудите все детали оплаты и доставки товара. После успешной сделки не забудьте оставить отзыв о покупателе, это существенно улучшит работу нашего сервиса.</p>
+							</div>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

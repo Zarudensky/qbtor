@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/loginmenu-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+		<title>О сайте</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index_mruy.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers_mruy.html">о сайте</a>
+						<a href="filter_mruy.html">тендеры</a>
+						<a href="tariffs_mruy.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cabinet_menu-block">
+					    <li class="cab">
+							<a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+								<div class="badge badgeup">3</div>
+								<div class="icon_cabinet_menu"></div>
+							</div>Мистер Уй</a>
+							<ul class="cabinet_menu">
+								<li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+								<li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+								<li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+                <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+								<li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+								<li><a href="about_comments.html">Выход</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">ЧТО ГОВОРЯТ О НАС</h2>
+					<div class="navigation-menu">
+						<div class="buyer">
+							<a href="about_for_buyers_mruy.html">Для покупателя</a>
+						</div>
+						<div class="seller">
+							<a href="about_for_seller_mruy.html">Для продавца</a>
+						</div>
+						<div class="comments fon">
+							<a href="about_comments_mruy.html">Отзывы</a>
+						</div>
+						<div class="answer">
+							<a href="about_answer_mruy.html">Вопрос/Ответ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="comment-block">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phaceventura.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content">
+								<div class="comment">
+									<a href="#">Ace Ventura</a>
+									<span>Сотрудничаю с сайтом несколько месяцев, удобный и практичный. Я торгую веселыми товарами по самым низким ценам, это мое хобби и не большой заработок. До этого продавал на ОЛХ, проме и др. Но здесь мне нравиться тем что есть возможность поучаствовать в реальном торге с другими продавцами, не нужно заморачиваться с рекламой, выкладывать фотки, менять цены и т.д. Жду с нетерпением новых торгов!</span>
+								</div>
+								<div class="date">
+									<p>Вчера</p>
+								</div>
+							</div>
+						</div>
+						<div class="comment-block">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phwhitedevil.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content">
+								<div class="comment">
+									<a href="#">White Devil</a>
+									<span>В наше время очень тяжело начинать все с нуля. Я начинал с торговой точки на рынке. Полтора года назад я открыл свой интернет-магазин автохимии. Столкнулся  с новыми, неизвестными ранее мне проблемами: поисковая оптимизация, контекстная реклама, скрупулезное Seo продвижение и т.д. Я не говорю за рутинную работу: наполнение сайта контентом и его оформление. В целом интересно и однозначно лучше, чем на рынке стоять. Но нет предела совершенству, я попробовал продавать на электронных торговых площадках, где все немного проще. Но там также есть свои нюансы, речь пойдет о моем последнем открытии- qbtor.com. В отличие от обычных аукционов, тендеров и досок объявлений, это совсем новый и удобный сервис продажи товаров на основе открытой конкуренции. Все честно, кто предложил меньшую цену тот и продал. В то время пока мой коллега занимался заполнением данных на всех площадках, где мы зарегистрированы, и с нетерпением ждал пока кто- то сделает заказ, я нашел покупателя и предложил цену меньше, чем у конкурентов. И так уже шесть сделок, хотя после всех событий в стране было долгое затишье. А тут много запросов, и как раз на те товары, которые мы можем предложить. Мы давно не понимали, почему люди не покупают у нас, ведь это самые низкие цены. Если вы ориентированы на покупателя и вам есть, что предложить - добро пожаловать на честные торги!</span>
+								</div>
+								<div class="date">
+									<p>23 августа 2015</p>
+								</div>
+							</div>
+						</div>
+						<div class="comment-block">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phmybrother.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content">
+								<div class="comment">
+									<a href="#">Мой брат Ларри</a>
+									<span>Идея классная, сам не раз задумывался что было бы не плохо, что бы мне предлагали лучшую цену, а не рыскать где чаво! Молодцы.</span>
+								</div>
+								<div class="date">
+									<p>15 августа 2015</p>
+								</div>
+							</div>
+						</div>
+						<div class="comment-block">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phjulya.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content">
+								<div class="comment">
+									<a href="#">Юлия Данилина</a>
+                  <span>Во всем цивилизованном мире каждая молодая мама использует детские подгузники. Это одно из величайших изобретений человечества. Подгузники намного упрощают жизнь молодым родителям и самим детям. Не могу себе представить, как наши родители обходились без них.
+									У меня, как и во многих молодых семьях, уходит много денег на подгузники. Вот я и решила сэкономить семейный бюджет. Сначала я покупала подгузники в аптеках, потом выискивала акции в супермаркетах, а в итоге - делаю покупки в интернете. И это очень удобно, так как существует много интернет-магазинов с разными ценами. Я покупаю все время одни и те же подгузники, проверенные, которые нравятся мне и моему малышу. Покупаю на сайте qbtor.com, но это не обычный интернет-магазин, а точнее вообще не магазин. Смысл в том, что я создаю торг на свои подгузники с самой низкой ценой, которую я готова заплатить. И начинается самое интересное - подгузники дешевеют на глазах. Это происходит за счет того, что другие интернет-магазины понижают цену для того, чтобы мне продать. В итоге тот магазин или продавец, который предложит самую низкую цену и продает товар.
+									Я обалдела от увиденного, а после шока поняла все прелести этого сайта. В условиях открытой конкуренции, магазины подгузников хотят продавать именно нам, молодым мамам, желающим купить дешевле. Поэтому они готовы предложить самую низкую цену. Также супер экономия времени: я раньше целый день бегала от плиты к компьютеру, от компьютера к пылесосу и от кроватки к компьютеру для долгих поисков, где купить дешевле. А сейчас сделала запрос и занимаюсь своими делами, вечером мне уже перезвонили и сказали, что могу забрать свой товар.</span>
+								</div>
+								<div class="date">
+									<p>5 июля 2015</p>
+								</div>
+							</div>
+						</div>
+						<div class="comment-block">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content">
+								<div class="comment">
+									<a href="#">Николай Петрович</a>
+									<span>Полезный сервис!</span>
+								</div>
+								<div class="date">
+									<p>30 июня 2015</p>
+								</div>
+							</div>
+						</div>
+						<div class="comment-recall">
+							<div class="nophoto">
+								<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+							</div>
+							<form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+								<textarea rows="3" cols="140" name="text" placeholder="Напишите отзыв..."></textarea>
+								<p class="send"><input type="submit" value="Отправить"></p>
+							</form>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

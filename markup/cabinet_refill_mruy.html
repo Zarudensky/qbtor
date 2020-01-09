@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/heder-style.css">
+  <link rel="stylesheet" href="style/loginmenu-style.css">
+  <link rel="stylesheet" href="style/navigation-style.css">
+  <link rel="stylesheet" href="style/content-style.css">
+  <link rel="stylesheet" href="style/footer-style.css">
+  <link rel="stylesheet" href="style/card-style.css">
+  <link rel="stylesheet" href="style/details-style.css">
+  <link rel="stylesheet" href="style/filter_navigation-style.css">
+  <link rel="stylesheet" href="style/popup-style.css">
+  <link rel="stylesheet" href="style/cabinet-style.css">
+  <link rel="stylesheet" href="style/newtender-style.css">
+  <link rel="stylesheet" href="style/balance-style.css">
+  <link rel="stylesheet" href="style/refill-style.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".all").on("change", function () {
+        var groupId = $(this).data('id');
+        $('.one[data-id="' + groupId + '"]').prop("checked", this.checked);
+      });
+
+      $(".one").on("change", function () {
+        var groupId = $(this).data('id');
+        var allChecked = $('.one[data-id="' + groupId + '"]:not(:checked)').length == 0;
+        $('.all[data-id="' + groupId + '"]').prop("checked", allChecked);
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#back-top").hide();
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#back-top').fadeIn();
+          } else {
+            $('#back-top').fadeOut();
+          }
+        });
+        $('#back-top a').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+      });
+    });
+  </script>
+  <script>
+    $('.radio').find('label').each(function (index, element) {
+      console.log(element);
+      $(element).click(function (event) {
+
+        console.log(element);
+        $('#balance').value = this.val();
+      });
+    });
+  </script>
+  <title>Мой кабинет</title>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="header-container">
+      <div class="logo-block">
+        <a href="index_mruy.html" title="На главную"></a>
+      </div>
+      <div class="menu-block">
+        <a href="about_for_buyers_mruy.html">о сайте</a>
+        <a href="filter_mruy.html">тендеры</a>
+        <a href="tariffs_mruy.html">тарифы</a>
+      </div>
+      <div class="newtender-block">
+        <a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+      </div>
+      <ul class="language-block">
+        <li class="lan">
+          <a class="lang" href="#">
+            <div class="language" title="Язык">
+              <div class="icon_language">
+                <div class="image_language">
+                  <div class="front img">
+                    <img src="images/header/lngearth.svg" alt="">
+                  </div>
+                  <div class="back img">
+                    <img src="images/header/lngrus.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <ul class="languages">
+            <li><a href="#">Українська</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="cabinet_menu-block">
+        <li class="cab">
+          <a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет">
+            <div class="cabinet">
+              <div class="badge badgeup">3</div>
+              <div class="icon_cabinet_menu"></div>
+            </div>
+            Мистер Уй</a>
+          <ul class="cabinet_menu">
+            <li><a href="cabinet_buy_active_mruy.html">Мои покупки</a>
+              <div class="badge badgedown">1</div>
+            </li>
+            <li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+            <li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a>
+              <div class="badge badgedown">2</div>
+            </li>
+            <li><a href="cabinet_messages_mruy.html">Сообщения</a></li>
+            <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+            <li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+            <li><a href="index.html">Выход</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="navigation">
+    <div class="navigation-container">
+      <h2 class="title">Пополнение счета</h2>
+    </div>
+  </div>
+  <div id="main" class="clearfix">
+    <div class="content">
+      <div class="content-container">
+        <div class="refill">
+          <div class="refill-container">
+            <div class="refillsum ">
+              <ul class="amountchoice">
+              <li>
+                <input type="radio" name="select" id="fifty" checked>
+                <div class="toptab">
+                  <div class="sum">
+                    <p class="choice">50 грн.</p>
+                    <p class="discount">3%</p>
+                  </div>
+                  <label for="fifty"></label>
+                </div>
+                <div class="bottominfo">
+                  <div class="suminfo">
+                    <p class="choice">Пополнение счета на 50 грн. за</p>
+                    <p class="sumchoice">48,50 грн.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="select" id="hundred">
+                <div class="toptab">
+                  <div class="sum">
+                    <p class="choice">100 грн.</p>
+                    <p class="discount">5%</p>
+                  </div>
+                  <label for="hundred"></label>
+                </div>
+                <div class="bottominfo">
+                  <div class="suminfo">
+                    <p class="choice">Пополнение счета на 100 грн. за</p>
+                    <p class="sumchoice">95 грн.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="select" id="twohundred">
+                <div class="toptab">
+                  <div class="sum">
+                    <p class="choice">200 грн.</p>
+                    <p class="discount">10%</p>
+                  </div>
+                  <label for="twohundred"></label>
+                </div>
+                <div class="bottominfo">
+                  <div class="suminfo">
+                    <p class="choice">Пополнение счета на 200 грн. за</p>
+                    <p class="sumchoice">180 грн.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="select" id="fivehundred">
+                <div class="toptab">
+                  <div class="sum">
+                    <p class="choice">500 грн.</p>
+                    <p class="discount">15%</p>
+                  </div>
+                  <label for="fivehundred"></label>
+                </div>
+                <div class="bottominfo">
+                  <div class="suminfo">
+                    <p class="choice">Пополнение счета на 500 грн. за</p>
+                    <p class="sumchoice">425 грн.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="bottombox"></div>
+            </div>
+            <div class="cardinfo">
+              <label id="numberlabel" for="numberinput">
+                <div class="frontcard">
+                <div class="cardnumber">
+                  <p>Введите реквизиты платежной карты</p>
+                  <input id="numberinput" name="cardnumber" type="number" placeholder="Номер карты" autocomplete="off"
+                         maxlength="19">
+            </div>
+                <div class="validity">
+                  <p class="scorr">Срок действия</p>
+                  <div class="validitywrap">
+                    <select name="validity" class="validityselect" title="Месяц">
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+              </div>
+                  <p class="slash">/</p>
+                  <div class="validitywrap">
+                    <select name="validity" class="validityselect" title="Год">
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                    </select>
+              </div>
+            </div>
+                </div>
+              </label>
+              <label id="cvvlabel" for="cvv">
+                <div class="backcard">
+                <div class="magneticstripe"></div>
+                  <input id="cvv" type="password" autocomplete="off" class="cvv" placeholder="CVV2/CVV2" maxlength="3">
+                <div class="help"><p>?</p>
+                  <div class="helpinfo">
+                    <p>Card Verification Value 2 / Card Validation Code 2 — трёхзначный
+                      код проверки подлинности карты платёжных систем Visa/Mastercard.
+                      Расположен на обратной стороне платежной карты, в поле для подписи.
+                    </p>
+                  </div>
+                </div>
+              </label>
+          </div>
+            </div>
+            <div class="attention">
+              <p>Обратите внимание, что для карты может быть установлен лимит на интернет-платежи. Чтобы проверить этот
+                лимит, обратитесь в банк.
+              <p/>
+            </div>
+            <div class="payment">
+              <div class="delivery-info">
+                <input id="checkbox" type="checkbox" class="one" checked="">
+                <label for="checkbox">Получить квитанцию на email</label>
+          </div>
+              <a href="#" class="offera">оплатить</a>
+            </div>
+            <div class="orline">
+              <span class="linelr"></span>
+              <p>или</p>
+              <span class="linelr"></span>
+            </div>
+            <div class="paymentmethod">
+              <div class="company">
+                <img src="images/privat1.svg">
+                <p>Пpиват24</p>
+          </div>
+              <div class="company">
+                <img src="images/kyivstar1.svg">
+                <p>Мобильные Деньги</p>
+              </div>
+              <div class="company">
+                <img src="images/bank1.svg">
+                <p>Наличными</p>
+              </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="back-top">
+      <a href="#"></a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <div class="footer-container">
+    <div class="footer-menu-block">
+      <a href="#">FAQ</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+      <a href="#">Размещение рекламы</a>
+    </div>
+    <div class="footer-info-block">
+      <div class="phone">
+        <img src="images/footer/ic1.svg" alt="Картинка">
+        <span>+380963515533</span>
+      </div>
+      <div class="email">
+        <img src="images/footer/ic2.svg" alt="Картинка">
+        <span>qbtor@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

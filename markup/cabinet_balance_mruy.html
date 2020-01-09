@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/heder-style.css">
+	<link rel="stylesheet" href="style/loginmenu-style.css">
+	<link rel="stylesheet" href="style/navigation-style.css">
+	<link rel="stylesheet" href="style/content-style.css">
+	<link rel="stylesheet" href="style/footer-style.css">
+	<link rel="stylesheet" href="style/card-style.css">
+	<link rel="stylesheet" href="style/details-style.css">
+	<link rel="stylesheet" href="style/filter_navigation-style.css">
+	<link rel="stylesheet" href="style/popup-style.css">
+	<link rel="stylesheet" href="style/cabinet-style.css">
+  <link rel="stylesheet" href="style/newtender-style.css">
+	<link rel="stylesheet" href="style/balance-style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".all").on("change", function() {
+				var groupId = $(this).data('id');
+				$('.one[data-id="' + groupId + '"]').prop("checked", this.checked);
+			});
+
+			$(".one").on("change", function() {
+				var groupId = $(this).data('id');
+				var allChecked = $('.one[data-id="' + groupId + '"]:not(:checked)').length == 0;
+				$('.all[data-id="' + groupId + '"]').prop("checked", allChecked);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+  <script>
+    $('.radio').find('label').each(function (index, element) {
+      console.log(element);
+      $(element).click(function (event) {
+
+        console.log(element);
+        $('#balance').value = this.val();
+      });
+    });
+  </script>
+	<title>Мой кабинет</title>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<div class="header-container">
+			<div class="logo-block">
+				<a href="index_mruy.html" title="На главную"></a>
+			</div>
+			<div class="menu-block">
+				<a href="about_for_buyers_mruy.html">о сайте</a>
+				<a href="filter_mruy.html">тендеры</a>
+				<a href="tariffs_mruy.html">тарифы</a>
+			</div>
+			<div class="newtender-block">
+				<a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+			</div>
+			<ul class="language-block">
+				<li class="lan">
+					<a class="lang" href="#"><div class="language" title="Язык">
+						<div class="icon_language">
+							<div class="image_language">
+								<div class="front img">
+									<img src="images/header/lngearth.svg" alt="">
+								</div>
+								<div class="back img">
+									<img src="images/header/lngrus.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</div></a>
+					<ul class="languages">
+						<li><a href="#">Українська</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="cabinet_menu-block">
+				<li class="cab">
+					<a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+						<div class="badge badgeup">3</div>
+						<div class="icon_cabinet_menu"></div>
+					</div>Мистер Уй</a>
+					<ul class="cabinet_menu">
+						<li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+						<li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+						<li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+            <li><a href="cabinet_messages_mruy.html">Сообщения</a></li>
+            <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+						<li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+						<li><a href="index.html">Выход</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class= "navigation">
+		<div class="navigation-container">
+			<h2 class="title">МОЙ КАБИНЕТ</h2>
+			<div class="navigation-menu">
+				<div class="buyer">
+					<a href="cabinet_buy_active_mruy.html">Мои покупки</a>
+					<div class="badge badgedown" title="Новые события в тендере">1</div>
+				</div>
+				<div class="seller">
+					<a href="cabinet_sale_active_mruy.html">Мои продажи</a>
+				</div>
+				<div class="comments">
+					<a href="cabinet_comment_fromseller_mruy.html">Отзывы</a>
+					<div class="badge badgedown" title="Получен новый отзыв">2</div>
+				</div>
+        <div class="messages">
+          <a href="cabinet_messages_mruy.html">Сообщения</a>
+        </div>
+				<div class="tabalance fon">
+					<a href="cabinet_balance_mruy.html">Баланс</a>
+				</div>
+				<div class="settings">
+					<a href="cabinet_settings_mruy.html">Настройки</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="clearfix">
+		<div class="content">
+			<div class="content-container">
+				<div class="budget-container">
+					<div class="balance-block">
+						<div class="account">
+              <p class="score">На вашем счету</p>
+							<p class="balance">100</p>
+              <p class="value">грн</p>
+						</div>
+            <a href="cabinet_refill_mruy.html" class="offera">пополнить счёт</a>
+          </div>
+          <div class="extract-block">
+						<div class="winningtender">
+							<div class="extractinfo">
+								<div class="extractingup">
+                  <p class="desc">Победа в тендере</p>
+                  <p class="bal">-10,00 грн</p>
+                  <div class="link">
+                    <a href="details_your_sale_finished_mruy.html" title="Просмотр тендера">Стульчик для кормления
+                      Chicco</a>
+                  </div>
+                </div>
+								<div class="extractingdown">
+                  <p class="desc">Остаток</p>
+                  <p class="bal">100,00 грн</p>
+                  <p class="tim">Вчера</p>
+								</div>
+							</div>
+						</div>
+            <div class="winningtender">
+              <div class="extractinfo">
+                <div class="extractingup">
+                  <p class="desc">Победа в тендере</p>
+                  <p class="bal">-10,00 грн</p>
+                  <div class="link">
+                    <a href="details_your_sale_finished_mruy_reviews.html" title="Просмотр тендера">Стульчик для
+                      кормления Chicco</a>
+                  </div>
+                </div>
+                <div class="extractingdown">
+                  <p class="desc">Остаток</p>
+                  <p class="bal">110.00 грн</p>
+                  <p class="tim">24 августа 2016</p>
+                </div>
+              </div>
+            </div>
+            <div class="refillcheck ">
+              <div class="extractinfo">
+                <div class="extractingup">
+                  <p class="desc">Пополнение счёта</p>
+                  <p class="bal">+100,00 грн</p>
+                  <div class="link">
+                    <p>Приват24</p>
+                  </div>
+                </div>
+                <div class="extractingdown">
+                  <p class="desc">Остаток</p>
+                  <p class="bal">120.00 грн</p>
+                  <p class="tim">18 августа 2016</p>
+                </div>
+              </div>
+            </div>
+            <div class="winningtender">
+              <div class="extractinfo">
+                <div class="extractingup">
+                  <p class="desc">Победа в тендере</p>
+                  <p class="bal">-10,00 грн</p>
+                  <div class="link">
+                    <a href="details_your_sale_finished_mruy.html" title="Просмотр тендера">Стульчик для кормления
+                      Chicco</a>
+                  </div>
+                </div>
+                <div class="extractingdown">
+                  <p class="desc">Остаток</p>
+                  <p class="bal">20.00 грн</p>
+                  <p class="tim">2 августа 2016</p>
+                </div>
+              </div>
+            </div>
+            <div class="winningtender">
+              <div class="extractinfo">
+                <div class="extractingup">
+                  <p class="desc">Победа в тендере</p>
+                  <p class="bal">-10,00 грн</p>
+                  <div class="link">
+                    <a href="details_your_sale_finished_mruy.html" title="Просмотр тендера">Стульчик для кормления
+                      Chicco</a>
+                  </div>
+                </div>
+                <div class="extractingdown">
+                  <p class="desc">Остаток</p>
+                  <p class="bal">10.00 грн</p>
+                  <p class="tim">1 августа 2016</p>
+                </div>
+              </div>
+            </div>
+            <div class="more">
+              <a href="#">показать больше</a>
+            </div>
+					</div>
+				</div>
+			</div>
+			<div id="back-top">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer-container">
+		<div class="footer-menu-block">
+			<a href="#">FAQ</a>
+			<a href="#">О нас</a>
+			<a href="#">Контакты</a>
+			<a href="#">Размещение рекламы</a>
+		</div>
+		<div class="footer-info-block">
+			<div class="phone">
+				<img src="images/footer/ic1.svg" alt="Картинка">
+				<span>+380963515533</span>
+			</div>
+			<div class="email">
+				<img src="images/footer/ic2.svg" alt="Картинка">
+				<span>qbtor@gmail.com</span>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

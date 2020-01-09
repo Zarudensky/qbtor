@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+    <link rel="stylesheet" href="style/loginmenu-style.css">
+		<link rel="stylesheet" href="style/popup-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/card-style.css">
+		<link rel="stylesheet" href="style/details-style.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+	    <title>Детали тендера</title>
+	</head>
+	<body>
+		<div class="wrap">
+      <header>
+        <div class="header-container">
+          <div class="logo-block">
+            <a href="index_mruy.html" title="На главную"></a>
+          </div>
+          <div class="menu-block">
+            <a href="about_for_buyers_mruy.html">о сайте</a>
+            <a href="filter_mruy.html">тендеры</a>
+            <a href="tariffs_mruy.html">тарифы</a>
+          </div>
+          <div class="newtender-block">
+            <a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+          </div>
+          <ul class="language-block">
+            <li class="lan">
+              <a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+                <div class="image_language">
+                  <div class="front img">
+                    <img src="images/header/lngearth.svg" alt="">
+                  </div>
+                  <div class="back img">
+                    <img src="images/header/lngrus.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              </div></a>
+              <ul class="languages">
+                <li><a href="#">Українська</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="cabinet_menu-block">
+            <li class="cab">
+              <a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+                <div class="badge badgeup">3</div>
+                <div class="icon_cabinet_menu"></div>
+              </div>Мистер Уй</a>
+              <ul class="cabinet_menu">
+                <li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+                <li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+                <li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+                <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+                <li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+                <li><a href="details_wins_active_forall.html">Выход</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">Детали тендера</h2>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="details">
+							<div class="details-container">
+								<div class="foto">
+									<a href="profile_my.html" title="Профиль пользователя">
+										<img src="images/photo/phmy.svg" alt="photo">
+										<span class="name">
+											<img src="images/stars5.svg" alt="rating">
+											<p>Станислав</p>
+										</span>
+									</a>
+								</div>
+								<div class="saving">
+									<div class="sumec">
+										<p>167</p>
+										<p class="value">грн.</p>
+									</div>
+								</div>
+								<div class="data">
+									<div class="data-container">
+										<div class="action">
+											<p>Купит</p>
+										</div>
+										<div class="title-name">
+											<p>Стульчик для кормления Chicco</p>
+										</div>
+										<div class="economy">
+											<p>Экономия</p>
+											<div class="scalec">
+												<div class="scalecw"></div>
+												<div class="scalecor"></div>
+											</div>
+										</div>
+										<div class="short-container">
+											<div class="short">
+												<img src="images/cards/iccity.svg" alt="" title="Город">
+												<p title="Город">Днепропетровск</p>
+											</div>
+											<div class="added">
+												<p>Добавлено 13 июля 2015 в 09:51:46</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<label class="info" for="card1">
+									<div class="info-container">
+										<div class="info-block">
+											<div class="current_price">
+												<span>Текущая цена</span>
+												<div class="current_price-block">
+													<p>2333</p>
+													<p class="value">грн.</p>
+												</div>
+											</div>
+											<div class="time">
+												<span>Время до завершения</span>
+												<p>01:37:28</p>
+											</div>
+										</div>
+										<div class="sentence">
+											<form>
+                        <input class="offer" type="submit" value="просмотр ставок">
+												<input class="offer" type="submit" value="завершить">
+											</form>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="detal-container">
+								<div class="detal-discussion">
+									<div class="discussion-block">
+										<div class="action">
+											<p>Подробное описание</p>
+										</div>
+										<div class="detailp">
+											<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+										</div>
+										<div class="scan">
+											<p>Кол-во просмотров: <span>63</span></p>
+										</div>
+										<div class="tiname">
+											<p>Обсуждение</p>
+										</div>
+										<div class="comment-block">
+											<div class="photo">
+												<a href="#"><img src="images/photo/phjimcarrey.svg" alt="photo"></a>
+											</div>
+											<div class="comment-detail">
+												<div class="comment">
+                          <a href="#">Jim Carrey</a>
+                          <span>А дед сел у ворот да и спрашивает: - Коза моя, коза, чѐрные глаза, кривая нога,
+													острые рога, что ты ела, что пила?- Я не ела, не пила, меня бабка не пасла. Как бежала через
+													мосточек ухватила кленовый листочек, - вот и вся моя еда.</span>
+                        </div>
+                        <div class="date">
+                          <label for="commentar"><span>13 июля 2015 г.</span>Ответить</label>
+                          <div class="commentar-block">
+                            <input type="checkbox" id="commentar" />
+                            <div class="recomment">
+                              <div class="nophoto">
+                                <a href="cabinet_settings_mruy.html" title="Вы"><img src="images/photo/phmruy.svg" alt="photo"></a>
+                              </div>
+                              <a class="recomment-clip" href="#" title="Прикрепить файл"></a>
+                              <form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+                                <textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+                                <span class="send"><input type="submit" value="Отправить"></span>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-block">
+                      <div class="photo">
+                        <a href="#"><img src="images/photo/phruslan.svg" alt="photo"></a>
+                      </div>
+                      <div class="comment-detail">
+                        <div class="comment">
+                          <a href="#">Ruslan Danilin</a>
+                          <span>Рассердился дед на бабку, раскричался и послал внучку козу пасти. Та пасла,
+													пасла и домой пригнала. А дед у ворот сидит и спрашивает: - Коза моя, коза, чѐрные глаза,
+													кривая нога? острые рога, что ты ела, что пила?</span>
+                        </div>
+                        <div class="date">
+                          <label for="commentar2"><span>Вчера</span>Ответить</label>
+                          <div class="commentar-block">
+                            <input type="checkbox" id="commentar2" />
+                            <div class="recomment">
+                              <div class="nophoto">
+                                <a href="cabinet_settings_mruy.html" title="Вы"><img src="images/photo/phmruy.svg" alt="photo"></a>
+                              </div>
+                              <a class="recomment-clip" href="#" title="Прикрепить файл"></a>
+                              <form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+                                <textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+                                <span class="send"><input type="submit" value="Отправить"></span>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-block-right">
+                      <div class="photo">
+                        <a href="#"><img src="images/photo/phjulya.svg" alt="photo"></a>
+                      </div>
+                      <div class="comment-detail-right">
+                        <div class="comment">
+                          <a href="#">Юлия Данилина</a>
+                          <span> Я не ела, я не пила, меня внучка не пасла, как бежала через мосточек,
+													ухватила кленовый листочек, - вот и вся моя еда.</span>
+                        </div>
+                        <div class="date-right">
+                          <label for="commentar3"><span>12 ч</span>Ответить</label>
+                          <div class="commentar-block">
+                            <input type="checkbox" id="commentar3" />
+                            <div class="recomment-right">
+                              <div class="nophoto">
+                                <a href="cabinet_settings_mruy.html" title="Вы"><img src="images/photo/phmruy.svg" alt="photo"></a>
+                              </div>
+                              <a class="recomment-clip" href="#" title="Прикрепить файл"></a>
+                              <form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+                                <textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+                                <span class="send"><input type="submit" value="Отправить"></span>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-block">
+                      <div class="photo">
+                        <a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+                      </div>
+                      <div class="comment-detail">
+                        <div class="comment">
+                          <a href="#">Николай Петрович</a>
+                          <span> Рассердился дед на внучку, раскричался, пошѐл сам козу пасти. Пас, пас,
+													досыта накормил и домой погнал.</span>
+                        </div>
+                        <div class="date">
+                          <label for="commentar4"><span>30 мин</span>Ответить</label>
+                          <div class="commentar-block">
+                            <input type="checkbox" id="commentar4" />
+                            <div class="recomment">
+                              <div class="nophoto" title="Вы">
+                                <a href="cabinet_settings_mruy.html"><img src="images/photo/phmruy.svg" alt="photo"></a>
+                              </div>
+                              <a class="recomment-clip" href="#" title="Прикрепить файл"></a>
+                              <form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+                                <textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+                                <span class="send"><input type="submit" value="Отправить"></span>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-call">
+                      <div class="nophoto" title="Вы">
+                        <a href="cabinet_settings_mruy.html"><img src="images/photo/phmruy.svg" alt="photo"></a>
+                      </div>
+                      <a class="comment-clip" href="#" title="Прикрепить файл"></a>
+                      <form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+                        <textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+                        <p class="send"><input type="submit" value="Отправить"></p>
+                      </form>
+                    </div>
+									</div>
+								</div>
+								<div class="detal-rates">
+									<div class="rates-block">
+										<div class="tiname">
+											<p>Выбирите продавца которого хотите заблокировать и укажите причину</p>
+										  <span>   После блокировки этот продавец не сможет принимать участие в тендере. Здесь также, в случае необходимости, Вы можете разблокировать его обратно.</span>
+                    </div>
+										<div class="line-start"></div>
+										<div class="rate-last">
+											<div class="photo">
+												<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Мистер Уй</a>
+                          <img src="images/test.svg" alt="button">
+												</div>
+												<div class="rating">
+													<img src="images/stars4.svg" alt="rating">
+												</div>
+                        <span>Этот продавец участвует в тендере</span>
+											</div>
+
+										</div>
+										<div class="rate-last">
+
+											<div class="photo">
+												<a href="#"><img src="images/photo/phscott.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Seann William Scott</a>
+                          <img src="images/test.svg" alt="button">
+												</div>
+												<div class="rating">
+													<img src="images/stars1.svg" alt="rating">
+												</div>
+                        <span>Этот продавец участвует в тендере</span>
+											</div>
+
+										</div>
+										<div class="rate-last">
+
+											<div class="photo">
+												<a href="#"><img src="images/photo/phmrbean.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info seller-info2">
+                        <textarea class="commentar" name="text" placeholder="Напишите причину блокировки..."></textarea>
+                        <input type="submit" value="Отправить">
+											</div>
+                      <div class="gfd">
+                        <img src="images/test2.svg" alt="button">
+                      </div>
+										</div>
+										<div class="rate-last">
+
+											<div class="photo">
+												<a href="#"><img src="images/photo/phivan.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Иван Васильевич</a>
+                          <img src="images/test.svg" alt="button">
+												</div>
+												<div class="rating">
+													<img src="images/stars1.svg" alt="rating">
+												</div>
+                        <span>Этот продавец участвует в тендере</span>
+											</div>
+
+										</div>
+										<div class="rate-last">
+
+											<div class="photo filter">
+												<a href="#"><img src="images/photo/phjulya.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname gray">
+													<a href="#">Юлия Данилина</a>
+                          <img src="images/test2.svg" alt="button">
+												</div>
+												<div class="rating filter">
+													<img src="images/stars2.svg" alt="rating">
+												</div>
+                        <span>Этот продавец не участвует в тендере</span>
+											</div>
+
+										</div>
+										<div class="rate-last">
+
+											<div class="photo">
+												<a href="#"><img src="images/photo/phruslan.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Ruslan Danilin</a>
+                          <img src="images/test.svg" alt="button">
+												</div>
+												<div class="rating">
+													<img src="images/stars5.svg" alt="rating">
+												</div>
+                        <span>Этот продавец участвует в тендере</span>
+											</div>
+
+										</div>
+										<div class="rate-last">
+
+											<div class="photo">
+												<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Николай Петрович</a>
+                          <img src="images/test.svg" alt="button">
+												</div>
+												<div class="rating">
+													<img src="images/stars1.svg" alt="rating">
+												</div>
+                        <span>Этот продавец участвует в тендере</span>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="image">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="image">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/popup-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+		<title>О сайте</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers.html">о сайте</a>
+						<a href="filter.html">тендеры</a>
+						<a href="tariffs.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="login-wrapper">
+						<input type="checkbox" class="login-checkbox" id="login">
+						<div class="login">
+					    	<div class="login-content">
+					      		<label for="login" class="login-closer"></label>
+					      		<h4>Добро пожаловать!</h4>
+					      		<p>Войти:</p>
+					      		<a class="butface" href="about_for_buyers_mruy.html">С помошью Facebook</a>
+					      		<a class="butgoog" href="#">С помошью Google+</a>
+					      		<div class="either">
+					      			<span class="lineor"></span>
+					      			<p>или</p>
+					      			<span class="lineor"></span>
+					      		</div>
+					      		<form class="logemail">
+									<input type="email" maxlength="50" placeholder="Ваш email..." required>
+									<input type="password" maxlength="50" placeholder="Пароль..." required>
+									<div class="logdop">
+										<div class="remember">
+											<input id="remember" type="checkbox" />
+											<label for="remember">Запомнить меня</label>
+										</div>
+										<a href="#">Забыли пароль?</a>
+									</div>
+									<input type="submit" value="ВОЙТИ">
+								</form>
+					      	</div>
+					  	</div>
+					</div>
+					<div class="cabinet-block">
+						<label for="login" title="Войти">
+							<div class="icon_cabinet">
+								<div class="arrow_img_cabinet"></div>
+								<div class="image_cabinet">
+									<div class="front img_cabinet">
+										<img src="images/header/iccab1.svg" alt="">
+									</div>
+									<div class="back img_cabinet">
+										<img src="images/header/iccab2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						мой кабинет</label>
+					</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">КАК ЭТО РАБОТАЕТ ДЛЯ ПОКУПАТЕЛЯ</h2>
+					<div class="navigation-menu">
+						<div class="buyer fon">
+							<a href="about_for_buyers.html">Для покупателя</a>
+						</div>
+						<div class="seller">
+							<a href="about_for_seller.html">Для продавца</a>
+						</div>
+						<div class="comments">
+							<a href="about_comments.html">Отзывы</a>
+						</div>
+						<div class="answer">
+							<a href="about_answer.html">Вопрос/Ответ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="cardab1">
+							<div class="card-container">
+								<h1 class="txtab">Создайте тендер,<br>заполнив<br> небольшую форму.</h1>
+								<h2 class="txtabt">Нажмите кнопку «Создать тендер»</h2>
+								<h2 class="txtabth">Укажите в форме, что хотите купить, обозначьте цену</h2>
+								<img src="images/about/imabbuy1.svg" alt="image">
+								<p class="txt">Для того, чтобы создать тендер, нажмите кнопку «Создать запрос» в верхнем меню. Заполните форму, укажите все параметры поиска:<br>- название товара (например, смартфон Philips);<br>-  подробно опишите товар (модель, партномер, комплектация, цвет, новый или б\у, вид доставки и оплаты);<br>- укажите категорию товара (техника, детский мир, авто, другое);<br>- выберите город, куда будет производиться доставка;<br>- укажите ваш максимальный бюджет, то есть ту сумму, которую вы планируете потратить на покупку товара.Всегда обозначайте только реальную цену. Если стоимость товара будет слишком занижена, вы не сможете получать адекватные предложения от продавцов;<br>- установите время окончания тендера, то есть укажите дату и время до которого вы планируете получать запросы от продавцов. При этом учитывайте график работы интернет-магазинов, так как многие из них работают с 9.00 до 18.00;<br>- нажмите кнопку «Начать тендер».</p>
+							</div>
+						</div>
+						<div class="cardab2">
+							<div class="card-container">
+								<h1 class="txtab">Ожидайте<br>лучшее<br> предложение!</h1>
+								<h2 class="txtabt">Созданный тендер будет отображаться в вашем Кабинете</h2>
+								<h2 class="txtabth">Продавцы будут бороться за вас, предлагая лучшую цену</h2>
+								<img src="images/about/imabbuy2.svg" alt="image">
+								<p class="txt">После создания запроса ожидайте поступления предложений от продавцов. Они начнут делать ставки, конкурируя между собой, и предлагать наименьшую цену. Все предложения от продавцов и детали тендеров вы сможете просматривать в разделе «Мой кабинет», выбрав вкладку «Мои покупки». Здесь же у вас есть возможность посредством комментариев обсуждать детали тендера с продавцом.</p>
+							</div>
+						</div>
+						<div class="cardab3">
+							<div class="card-container">
+								<h1 class="txtab">Произведите<br>оплату и получите<br>свой товар.</h1>
+								<h2 class="txtabt">По окончании тендера с вами свяжется продавец</h2>
+								<h2 class="txtabth">Доставку товара оплачивает продавец</h2>
+								<img src="images/about/imabbuy3.svg" alt="image">
+								<p class="txt">По окончании тендера выигрывает продавец, предлагающий товар с наименьшей ценой. Только после вашего подтверждения о сделке с вами свяжется продавец для обсуждения деталей оплаты и доставки. После получения товара не забудьте оставить отзыв о продавце, это существенно улучшит работу нашего сервиса.</p>
+							</div>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

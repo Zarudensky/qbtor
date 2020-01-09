@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/loginmenu-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<link rel="stylesheet" href="style/card-style.css">
+		<link rel="stylesheet" href="style/details-style.css">
+		<link rel="stylesheet" href="style/cabinet-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+		<title>Мой кабинет</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index_mruy.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers_mruy.html">о сайте</a>
+						<a href="filter_mruy.html">тендеры</a>
+						<a href="tariffs_mruy.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">
+								<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cabinet_menu-block">
+					    <li class="cab">
+							<a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+								<div class="badge badgeup">3</div>
+								<div class="icon_cabinet_menu"></div>
+							</div>Мистер Уй</a>
+							<ul class="cabinet_menu">
+								<li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+								<li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+								<li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+                <li><a href="cabinet_messages_mruy.html">Сообщения</a></li>
+                <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+                <li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+								<li><a href="index.html">Выход</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">МОЙ КАБИНЕТ</h2>
+					<div class="navigation-menu">
+						<div class="buyer">
+							<a href="cabinet_buy_active_mruy.html">Мои покупки</a>
+							<div class="badge badgedown" title="Новые события в тендере">1</div>
+						</div>
+						<div class="seller">
+							<a href="cabinet_sale_active_mruy.html">Мои продажи</a>
+						</div>
+						<div class="comments fon">
+							<a href="cabinet_comment_fromseller_mruy.html">Отзывы</a>
+							<div class="badge badgedown" title="Получен новый отзыв">2</div>
+						</div>
+            <div class="messages">
+              <a href="cabinet_messages_mruy.html">Сообщения</a>
+            </div>
+            <div class="tabalance">
+              <a href="cabinet_balance_mruy.html">Баланс</a>
+						</div>
+						<div class="settings">
+							<a href="cabinet_settings_mruy.html">Настройки</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="sorting">
+							<a name="default" href="#">Полученные от покупателей</a>
+							<div class="badge sort2">1</div>
+							<img src="images/filter/line.svg" alt="line">
+							<a href="#">Полученные от продавцов</a>
+							<img src="images/filter/line.svg" alt="line">
+							<a href="cabinet_review_mruy.html">Необходимо оставить отзыв</a>
+              <div class="badge sort3">1</div>
+						</div>
+						<div class="comment-block-comment">
+							<div class="photo">
+								<a href="profile_my_mruy.html"><img src="images/photo/phmy.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content-comment">
+								<div class="comment-comment">
+									<a href="profile_my_mruy.html">Станислав</a>
+									<span>Думающий атеист, живущий по совести, сам не понимает, насколько он близок к Богу.
+									Потому что творит добро не ожидая награды, в отличие от верующих лицемеров.
+									Ганс Христиан Андерсон</span>
+								</div>
+								<div class="date-comment">
+									<div class="dinfcom">
+										<div class="dinfcomment">
+											<span>14 июля 2015 г.</span>
+											<img src="images/stars5.svg" alt="rating" title="Оценка">
+										</div>
+										<span>Куплено:</span>
+										<a href="#">Стульчик для кормления Chicco</a>
+									</div>
+									<label class="backwrite" for="commentar">Написать ответный отзыв</label>
+                </div>
+								<div class="commentar-block">
+									<input type="checkbox" id="commentar" />
+									<div class="recomment-comment">
+										<label class="hide orange" for="commentar">Написать позже</label>
+										<div class="nophoto">
+											<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+										</div>
+										<form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+											<textarea rows="3" cols="140" name="text" placeholder="Напишите отзыв..."></textarea>
+											<div class="rating-comment">
+												<div class="stars-com">
+												    <input id="star-com4" type="radio" name="stars-com"/>
+												    <label title="Высокий" for="star-com4"></label>
+
+												    <input id="star-com3" type="radio" name="stars-com"/>
+												    <label title="Выше среднего" for="star-com3"></label>
+
+												    <input id="star-com2" type="radio" name="stars-com"/>
+												    <label title="Средний" for="star-com2"></label>
+
+												    <input id="star-com1" type="radio" name="stars-com"/>
+												    <label title="Ниже среднего" for="star-com1"></label>
+
+												    <input id="star-com0" type="radio" name="stars-com"/>
+												    <label title="Низкий" for="star-com0"></label>
+												</div>
+												<span class="send"><input type="submit" value="Отправить"></span>
+                      </div>
+										</form>
+									</div>
+                </div>
+							</div>
+							<div class="badge badgedown" title="Новый отзыв о сделке">1</div>
+						</div>
+						<div class="comment-block-comment">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phjimcarrey.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content-comment">
+								<div class="comment-comment">
+									<a href="#">Jim Carrey</a>
+									<span>Сделка прошла успешно. Рекомендую. У меня была собака, которую звали "Прямо в точку"(Бинго). Щиикака!</span>
+								</div>
+								<div class="date-comment">
+									<div class="dinfcom">
+										<div class="dinfcomment">
+											<span>14 июля 2015 г.</span>
+											<img src="images/stars4.svg" alt="rating" title="Оценка">
+										</div>
+										<span>Куплено:</span>
+										<a href="#">Чашка из гуано?!(я хочу заказать весь сервиз)</a>
+									</div>
+									<label for="commentar2">Ответный отзыв</label>
+                </div>
+								<div class="commentar-block">
+									<input type="checkbox" id="commentar2" />
+									<div class="recomment-recomment">
+										<label class="hide" for="commentar2">Скрыть отзыв</label>
+										<div class="skyline"></div>
+										<div class="recomment-block">
+											<div class="photo">
+												<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+											</div>
+											<div class="comwidth">
+												<div class="comment-comment">
+													<span>Оке-ей! Я пройдоха, мне все нравиться, сникерсы!!! Спасибо Мисир!!!!! Ваш верный слуга Жакуй.</span>
+												</div>
+												<div class="date-comment">
+													<div class="dinfcom">
+														<span>14 июля 2015 г.</span>
+														<img src="images/stars5.svg" alt="rating" title="Оценка">
+													</div>
+												</div>
+											</div>
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comment-block-comment">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phivan.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content-comment">
+								<div class="comment-comment">
+									<a href="#">Иван Васильевич</a>
+									<span>Казань брал, Астрахань брал, Ревель брал, Шпака — не брал. Здрав будь, боярин.</span>
+								</div>
+								<div class="date-comment">
+									<div class="dinfcom">
+										<div class="dinfcomment">
+											<span>14 июля 2015 г.</span>
+											<img src="images/stars2.svg" alt="rating" title="Оценка">
+										</div>
+										<span>Куплено:</span>
+										<a href="#">Крест животворящий</a>
+									</div>
+									<label for="commentar3">Ответный отзыв</label>
+                </div>
+								<div class="commentar-block">
+									<input type="checkbox" id="commentar3" />
+									<div class="recomment-recomment">
+										<label class="hide" for="commentar3">Скрыть отзыв</label>
+										<div class="skyline"></div>
+										<div class="recomment-block">
+											<div class="photo">
+												<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+											</div>
+											<div class="comwidth">
+												<div class="comment-comment">
+													<span>Оке-ей! Я пройдоха, мне все нравиться, сникерсы!!! Спасибо Мисир!!!!! Ваш верный слуга Жакуй.Оке-ей! Я пройдоха, мне все нравиться, сникерсы!!! Спасибо Мисир!!!!! Ваш верный слуга Жакуй.</span>
+												</div>
+												<div class="date-comment">
+													<div class="dinfcom">
+														<span>14 июля 2015 г.</span>
+														<img src="images/stars3.svg" alt="rating" title="Оценка">
+													</div>
+												</div>
+											</div>
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comment-block-comment">
+							<div class="photo">
+								<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+							</div>
+							<div class="comment-content-comment">
+								<div class="comment-comment">
+									<a href="#">Николай Петрович</a>
+									<span>Сейчас будет много текста, для проверки.Сейчас будет много текста, для проверки.Сейчас будет много текста, для проверки.Сейчас будет много текста, для проверки.Сейчас будет много текста, для проверки.Сейчас будет много текста, для проверки.Сейчас будет много текста!</span>
+								</div>
+								<div class="date-comment">
+									<div class="dinfcom">
+										<div class="dinfcomment">
+											<span>14 июля 2015 г.</span>
+											<img src="images/stars4.svg" alt="rating" title="Оценка">
+										</div>
+										<span>Куплено:</span>
+										<a href="#">Вантуз (ручной)</a>
+									</div>
+									<label for="commentar4">Ответный отзыв</label>
+                </div>
+								<div class="commentar-block">
+									<input type="checkbox" id="commentar4" />
+									<div class="recomment-recomment">
+										<label class="hide" for="commentar4">Скрыть отзыв</label>
+										<div class="skyline"></div>
+										<div class="recomment-block">
+											<div class="photo">
+												<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+											</div>
+											<div class="comwidth">
+												<div class="comment-comment">
+													<span>А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!А вот теперь, действительно много текста!</span>
+												</div>
+												<div class="date-comment">
+													<div class="dinfcom">
+														<span>14 июля 2015 г.</span>
+														<img src="images/stars1.svg" alt="rating" title="Оценка">
+													</div>
+												</div>
+											</div>
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+				<p class="align"></p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

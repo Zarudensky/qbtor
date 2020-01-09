@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/popup-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<link rel="stylesheet" href="style/slider-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/card-style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="slick/slick-theme.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+      $('.category-container').slick({
+        focusOnSelect: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        // prevArrow: ".slider__prev",
+        // nextArrow: ".slider__next",
+        centerMode: true,
+        centerPadding: 0
+      });
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+		<title>Qbtor</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers.html">о сайте</a>
+						<a href="filter.html">тендеры</a>
+						<a href="tariffs.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="index_ukr.html">Українська</a></li>
+								<li><a href="index_eng.html">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="login-wrapper">
+						<input type="checkbox" class="login-checkbox" id="login">
+						<div class="login">
+					    	<div class="login-content">
+					      		<label for="login" class="login-closer"></label>
+					      		<h4>Добро пожаловать!</h4>
+					      		<p>Войти:</p>
+					      		<a class="butface" href="index_mruy.html">С помошью Facebook</a>
+					      		<a class="butgoog" href="#">С помошью Google+</a>
+					      		<div class="either">
+					      			<span class="lineor"></span>
+					      			<p>или</p>
+					      			<span class="lineor"></span>
+					      		</div>
+					      		<form class="logemail">
+									<input type="email" maxlength="50" placeholder="Ваш email..." required>
+									<input type="password" maxlength="50" placeholder="Пароль..." required>
+									<div class="logdop">
+										<div class="remember">
+											<input id="remember" type="checkbox" />
+											<label for="remember">Запомнить меня</label>
+										</div>
+										<a href="#">Забыли пароль?</a>
+									</div>
+									<input type="submit" value="ВОЙТИ">
+									<div class="registration"><a href="#">Регистрирация</a></div>
+								</form>
+					      	</div>
+					  	</div>
+					</div>
+					<div class="cabinet-block">
+						<label for="login" title="Войти">
+							<div class="icon_cabinet">
+								<div class="arrow_img_cabinet"></div>
+								<div class="image_cabinet">
+									<div class="front img_cabinet">
+										<img src="images/header/iccab1.svg" alt="">
+									</div>
+									<div class="back img_cabinet">
+										<img src="images/header/iccab2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						мой кабинет</label>
+					</div>
+			</header>
+			<div class= "navigation_index">
+				<div class="navigation_index-container">
+					<h1 class="title-index">МИНИ-ТЕНДЕРЫ - помогаем снижать цены!</h1>
+					<div class="mans">
+						<div class="man1">
+							<div><img src="images/index/man1.svg" alt="image"></div>
+							<div>Точно знаете, какой товар<br>хотите купить?</div>
+						</div>
+						<div class="man2">
+							<div><img src="images/index/man2.svg" alt="image"></div>
+							<div>Создайте тендер, заполнив<br>небольшую форму!</div>
+						</div>
+						<div class="man3">
+							<div><img src="images/index/man3.svg" alt="image"></div>
+							<div>Продавцы будут бороться за вас,<br>предлагая наименьшую цену!</div>
+						</div>
+					</div>
+					<div class="button1">
+						<a href="newtender.html">СОЗДАТЬ ТЕНДЕР БЕСПЛАТНО</a>
+					</div>
+				</div>
+			</div>
+			<div class="">
+				<div class="">
+					<h1>горячие тендеры</h1>
+					<img src="images/index/slider/arrowdown.svg" alt="image" id="imge">
+					<div class="">
+						<a class="arrowl" href="#"></a>
+						<div class="category-container">
+							<div class="category">
+								<a href="#"><img src="images/index/slider/sport1.svg" alt=""></a>
+								<a href="#">Спорт, здоровье</a>
+							</div>
+							<div class="category">
+								<a href="#"><img src="images/index/slider/equipment1.svg" alt=""></a>
+								<a href="#">Техника</a>
+							</div>
+							<div class="category">
+								<a href="#"><img src="images/index/slider/fashion1.svg" alt=""></a>
+								<a href="#">Мода, сувениры</a>
+							</div>
+							<div class="category">
+								<a href="#"><img src="images/index/slider/house1.svg" alt=""></a>
+								<a href="#">Дом, сад</a>
+							</div>
+              <div class="category">
+                <a href="#"><img src="images/index/slider/house1.svg" alt=""></a>
+                <a href="#">Дом, сад 2</a>
+              </div>
+              <div class="category">
+                <a href="#"><img src="images/index/slider/house1.svg" alt=""></a>
+                <a href="#">Дом, сад 3</a>
+              </div>
+              <div class="category">
+                <a href="#"><img src="images/index/slider/house1.svg" alt=""></a>
+                <a href="#">Дом, сад 4</a>
+              </div>
+							<div class="category">
+								<a href="#"><img src="images/index/slider/food1.svg" alt=""></a>
+								<a href="#">Еда, напитки</a>
+							</div>
+							<div class="category">
+								<a href="#"><img src="images/index/slider/auto1.svg" alt=""></a>
+								<a href="#">Авто</a>
+							</div>
+						</div>
+						<a class="arrowr" href="#"></a>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="card">
+							<div class="foto">
+								<a href="#" title="Профиль пользователя">
+									<img src="images/photo/phno.svg" alt="photo">
+									<div class="name">
+										<img src="images/stars2.svg" alt="rating">
+										<p>Алексей</p>
+									</div>
+								</a>
+							</div>
+							<div class="data"><a href="details_forall_active.html" title="Детали тендера">
+								<div class="data-container">
+									<div class="action">
+										<p>Купит</p>
+									</div>
+									<div class="title-name">
+										<p>Стульчик для кормления Chicco</p>
+									</div>
+									<div class="detail">
+										<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+									</div>
+									<div class="short-container">
+										<div class="short">
+											<img src="images/cards/iccity.svg" alt="" title="Город">
+											<p title="Город">Днепропетровск</p>
+											<img src="images/cards/iccomment.svg" alt="" title="Кол-во комментариев">
+											<p title="Кол-во комментариев">14</p>
+											<img src="images/cards/icrates.svg" alt="" title="Кол-во ставок">
+											<p title="Кол-во ставок">8</p>
+											<img src="images/cards/icviews.svg" alt="" title="Кол-во просмотров">
+											<p title="Кол-во просмотров">167</p>
+										</div>
+										<div class="added">
+											<p title="Добавлено">13 июля 2015 в 09:51</p>
+										</div>
+									</div>
+								</div>
+							</a></div>
+							<label class="info" for="card1">
+								<div class="info-container">
+									<div class="info-block">
+										<div class="current_price">
+											<span>Текущая цена</span>
+											<div class="current_price-block">
+												<p>2334</p>
+												<p class="value">грн.</p>
+											</div>
+										</div>
+										<div class="time">
+											<span>Время до завершения</span>
+											<p>01:37:28</p>
+										</div>
+									</div>
+									<div class="sentence">
+										<form>
+											<input id="card1" type="number" name="sentence" max="2334" min="1" placeholder="Предложите дешевле" title="Введите число меньше текущей цены" required>
+											<input class="offer" type="submit" value="предложить">
+										</form>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="card">
+							<div class="foto">
+								<a href="profile_my.html" title="Профиль пользователя">
+									<img src="images/photo/phmy.svg" alt="photo">
+									<span class="name">
+										<img src="images/stars5.svg" alt="rating">
+										<p>Станислав</p>
+									</span>
+								</a>
+							</div>
+							<div class="data"><a href="details_wins_active_forall.html" title="Детали тендера">
+								<div class="data-container">
+									<div class="action">
+										<p>Купит</p>
+									</div>
+									<div class="title-name">
+										<p>Стульчик для кормления Chicco</p>
+									</div>
+									<div class="detail">
+										<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+									</div>
+									<div class="short-container">
+										<div class="short">
+											<img src="images/cards/iccity.svg" alt="" title="Город">
+											<p title="Город">Днепропетровск</p>
+											<img src="images/cards/iccomment.svg" alt="" title="Кол-во комментариев">
+											<p title="Кол-во комментариев">14</p>
+											<img src="images/cards/icrates.svg" alt="" title="Кол-во ставок">
+											<p title="Кол-во ставок">8</p>
+											<img src="images/cards/icviews.svg" alt="" title="Кол-во просмотров">
+											<p title="Кол-во просмотров">167</p>
+										</div>
+										<div class="added">
+											<p title="Добавлено">13 июля 2015 в 09:51</p>
+										</div>
+									</div>
+								</div>
+							</a></div>
+							<label class="info" for="card2">
+								<div class="info-container">
+									<div class="info-block">
+										<div class="current_price">
+											<span>Текущая цена</span>
+											<div class="current_price-block">
+												<p>2333</p>
+												<p class="value">грн.</p>
+											</div>
+										</div>
+										<div class="time">
+											<span>Время до завершения</span>
+											<p>01:37:28</p>
+										</div>
+									</div>
+									<div class="sentence">
+										<form>
+											<input id="card2" type="number" name="sentence" max="2333" min="1" placeholder="Предложите дешевле" title="Введите число меньше текущей цены" required>
+											<input class="offer" type="submit" value="предложить">
+										</form>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="card">
+							<div class="foto">
+								<a href="profile_my.html" title="Профиль пользователя">
+									<img src="images/photo/phmy.svg" alt="photo">
+									<span class="name">
+										<img src="images/stars5.svg" alt="rating">
+										<p>Станислав</p>
+									</span>
+								</a>
+							</div>
+							<div class="data"><a href="details_lost_active_forall.html" title="Детали тендера">
+								<div class="data-container">
+									<div class="action">
+										<p>Купит</p>
+									</div>
+									<div class="title-name">
+										<p>Стульчик для кормления Chicco</p>
+									</div>
+									<div class="detail">
+										<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+									</div>
+									<div class="short-container">
+										<div class="short">
+											<img src="images/cards/iccity.svg" alt="" title="Город">
+											<p title="Город">Днепропетровск</p>
+											<img src="images/cards/iccomment.svg" alt="" title="Кол-во комментариев">
+											<p title="Кол-во комментариев">14</p>
+											<img src="images/cards/icrates.svg" alt="" title="Кол-во ставок">
+											<p title="Кол-во ставок">8</p>
+											<img src="images/cards/icviews.svg" alt="" title="Кол-во просмотров">
+											<p title="Кол-во просмотров">167</p>
+										</div>
+										<div class="added">
+											<p title="Добавлено">13 июля 2015 в 09:51</p>
+										</div>
+									</div>
+								</div>
+							</a></div>
+							<label class="info" for="card3">
+								<div class="info-container">
+									<div class="info-block">
+										<div class="current_price">
+											<span>Текущая цена</span>
+											<div class="current_price-block">
+												<p>2332</p>
+												<p class="value">грн.</p>
+											</div>
+										</div>
+										<div class="time">
+											<span>Время до завершения</span>
+											<p>01:37:28</p>
+										</div>
+									</div>
+									<div class="sentence">
+										<form>
+											<input id="card3" type="number" name="sentence" max="2332" min="1" placeholder="Предложите дешевле" title="Введите число меньше текущей цены" required>
+											<input class="offer" type="submit" value="предложить">
+										</form>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="other">
+							<a href="filter.html">другие тендеры</a>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

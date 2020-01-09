@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/loginmenu-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/card-style.css">
+		<link rel="stylesheet" href="style/filter_navigation-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+	    <script>
+			$(function() {
+			    $( "#slider-range" ).slider({
+			        step: 1000,
+			        range: true,
+			        min: 0,
+			        max: 10000,
+			        values: [ 3000, 7000 ],
+			        slide: function( event, ui ) {
+			       		$( "#price1" ).val( "от " + ui.values[ 0 ] );
+			        	$( "#price2" ).val( "до " + ui.values[ 1 ] );
+			        }
+			    });
+			    $( "#price1" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ) );
+			    $( "#price2" ).val( "до " + $( "#slider-range" ).slider( "values", 1 ) );
+			    jQuery('#price1, #price2').keypress(function(event){
+					var key, keyChar;
+					if(!event) var event = window.event;
+					if (event.keyCode) key = event.keyCode;
+					else if(event.which) key = event.which;
+					if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 ) return true;
+					keyChar=String.fromCharCode(key);
+					if(!/\d/.test(keyChar))	return false;
+				});
+			    $("input#price1").change(function(){
+		  			var value1=$("input#price1").val();
+		  			var value2=$("input#price2").val();
+		      			if(parseInt(value1) > parseInt(value2)){
+		  				value1 = value2;
+		  				$("input#price1").val(value1);
+		  			}
+            $("#slider-range").slider("values", 0, value1);
+		  		});
+		        $("input#price2").change(function(){
+				  	var value1=$("input#price1").val();
+				  	var value2=$("input#price2").val();
+				  		if(parseInt(value1) > parseInt(value2)){
+				  		value2 = value1;
+				  		$("input#price2").val(value2);
+				  	}
+				  	$("#slider-range").slider("values",1,value2);
+				});
+			});
+		</script>
+		<title>Тендеры</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index_mruy.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers_mruy.html">о сайте</a>
+						<a href="filter_mruy.html">тендеры</a>
+						<a href="tariffs_mruy.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cabinet_menu-block">
+					    <li class="cab">
+							<a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+								<div class="badge badgeup">3</div>
+								<div class="icon_cabinet_menu"></div>
+							</div>Мистер Уй</a>
+							<ul class="cabinet_menu">
+								<li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+								<li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+								<li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+                <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+								<li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+								<li><a href="filter.html">Выход</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">фильтр для поиска тендеров</h2>
+					<div class="filter">
+						<form action="filter_nocard.html">
+							<div class="inputs1">
+								<input type="search" name="name" maxlength="50" placeholder="Поиск...">
+								<div class="category gory">
+									<label for="category-container">
+										<div class="icon_category">
+											<div class="image">
+												<div class="front img">
+													<img src="images/filter/iccategory.svg" alt="">
+												</div>
+												<div class="back img">
+													<img src="images/filter/iccategory2.svg" alt="">
+												</div>
+											</div>
+										</div>
+									Все категории</label>
+									<div class="category-block">
+										<input type="checkbox" id="category-container" />
+										<div class="categorys">
+											<label>Авто</label>
+											<label>Детский мир</label>
+											<label>Дом, сад</label>
+											<label>Еда, напитки</label>
+											<label>Мода, сувениры</label>
+											<label>Спорт, здоровье</label>
+											<label>Техника</label>
+										</div>
+									</div>
+								</div>
+								<div class="region">
+									<label for="region-container">
+										<div class="icon_region">
+											<div class="image">
+												<div class="front img">
+													<img src="images/cards/iccity.svg" alt="">
+												</div>
+												<div class="back img">
+													<img src="images/filter/iccity2.svg" alt="">
+												</div>
+											</div>
+										</div>
+									Вся Украина</label>
+									<div class="region-block">
+										<input type="checkbox" id="region-container" />
+										<div class="regions">
+											<div class="regionsgroup-container">
+												<div class="regionsgroup">
+													<label for="region1">Днепропетровская обл.</label>
+													<div class="city-block">
+														<input type="checkbox" id="region1" />
+														<div class="citys">
+															<div class="allcitys">
+																<label name="allcitys">Все города</label>
+															</div>
+															<div class="citysgroup-container">
+																<div class="citysgroup">
+																	<label for="city1">Днепропетровск</label>
+																	<label for="city2">Кривой Рог</label>
+																	<label for="city3">Днепродзержинск</label>
+																	<label for="city4">Никополь</label>
+                                  <label for="city5">Павлоград</label>
+																</div>
+																<div class="citysgroup">
+																	<label for="city6">Новомосковск</label>
+																	<label for="city7">Марганец</label>
+																	<label for="city8">Жёлтые Воды</label>
+																	<label for="city9">Орджоникидзе</label>
+																	<label for="city10">Синельниково</label>
+																</div>
+																<div class="citysgroup">
+																	<label for="city11">Першотравенск</label>
+																	<label for="city12">Терновка</label>
+																	<label for="city13">Вольногорск</label>
+																	<label for="city14">Подгородное</label>
+                                  <label for="city15">Пятихатки</label>
+																</div>
+																<div class="citysgroup">
+																	<label for="city16">Верхнеднепровск</label>
+																	<label for="city17">Апостолово</label>
+																	<label for="city18">Перещепино</label>
+																	<label for="city18">Другой город</label>
+																</div>
+															</div>
+														</div>
+                          </div>
+													<label for="region2">Киевская обл.</label>
+													<label for="region3">Одесская обл.</label>
+													<label for="region4">Харьковская обл.</label>
+													<label for="region5">Львовская обл.</label>
+													<label for="region6">Хмельницкая обл.</label>
+													<label for="region7">Запорожская обл.</label>
+												</div>
+												<div class="regionsgroup">
+													<label for="region8">Херсонская обл.</label>
+													<label for="region9">Полтавская обл.</label>
+													<label for="region10">Винницкая обл.</label>
+													<label for="region11">Николаевская обл.</label>
+													<label for="region12">Сумская обл.</label>
+													<label for="region13">Черкасская обл.</label>
+													<label for="region14">Кировоградская обл.</label>
+												</div>
+												<div class="regionsgroup">
+													<label for="region15">Черниговская обл.</label>
+													<label for="region16">Житомирская обл.</label>
+													<label for="region17">Закарпатская обл.</label>
+													<label for="region18">Ивано-Франковская обл.</label>
+													<label for="region19">Ровненская обл.</label>
+													<label for="region20">Тернопольская обл.</label>
+													<label for="region21">Черновицкая обл.</label>
+												</div>
+												<div class="regionsgroup">
+													<label for="region22">Волынская обл.</label>
+													<label for="region23">Донецкая обл.</label>
+													<label for="region24">Луганская обл.</label>
+                          <label for="region25">Крым</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="button_search">
+									<a href="filter_nocard_mruy.html">
+										<div class="btns">Найти</div>
+										<img class="search" src="images/filter/search.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="inputs2">
+								<div class="price">
+									<div>
+										<input id="price1" type="namber" name="price1" placeholder="Цена от...">
+										<input id="price2" type="namber" name="price2" placeholder="Цена до...">
+										<div id="slider-range"></div>
+									</div>
+								</div>
+								<div class="rating">
+									<span>Рейтинг покупателя от:</span>
+									<div class="stars">
+									    <input id="star4" type="radio" name="reviewStars"/>
+									    <label title="Высокий" for="star4"></label>
+
+									    <input id="star3" type="radio" name="reviewStars"/>
+									    <label title="Выше среднего" for="star3"></label>
+
+									    <input id="star2" type="radio" name="reviewStars"/>
+									    <label title="Средний" for="star2"></label>
+
+									    <input id="star1" type="radio" name="reviewStars"/>
+									    <label title="Ниже среднего" for="star1"></label>
+
+									    <input id="star0" type="radio" name="reviewStars"/>
+									    <label title="Низкий" for="star0"></label>
+									</div>
+								</div>
+								<input type="reset" value="Сбросить параметры">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="sorting">
+							<a name="default" href="#">Завершаются</a>
+							<img src="images/filter/line.svg" alt="line">
+							<a href="#">Новые</a>
+							<img src="images/filter/line.svg" alt="line">
+							<a href="#">По кол-ву предложений</a>
+						</div>
+						<div class="card">
+							<div class="foto">
+								<a href="#" title="Профиль пользователя">
+									<img src="images/photo/phno.svg" alt="foto">
+									<div class="name">
+										<img src="images/stars2.svg" alt="rating">
+										<p>Алексей</p>
+									</div>
+								</a>
+							</div>
+							<div class="data"><a href="details_forall_active_mruy.html" title="Детали тендера">
+								<div class="data-container">
+									<div class="action">
+										<p>Купит</p>
+									</div>
+									<div class="title-name">
+										<p>Стульчик для кормления Chicco</p>
+									</div>
+									<div class="detail">
+										<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+									</div>
+									<div class="short-container">
+										<div class="short">
+											<img src="images/cards/iccity.svg" alt="" title="Город">
+											<p title="Город">Днепропетровск</p>
+											<img src="images/cards/iccomment.svg" alt="" title="Кол-во комментариев">
+											<p title="Кол-во комментариев">14</p>
+											<img src="images/cards/icrates.svg" alt="" title="Кол-во ставок">
+											<p title="Кол-во ставок">8</p>
+											<img src="images/cards/icviews.svg" alt="" title="Кол-во просмотров">
+											<p title="Кол-во просмотров">167</p>
+										</div>
+										<div class="added">
+											<p title="Добавлено">13 июля 2015 в 09:51</p>
+										</div>
+									</div>
+								</div>
+							</a></div>
+							<label class="info" for="card1">
+								<div class="info-container">
+									<div class="info-block">
+										<div class="current_price">
+											<span>Текущая цена</span>
+											<div class="current_price-block">
+												<p>2334</p>
+												<p class="value">грн.</p>
+											</div>
+										</div>
+										<div class="time">
+											<span>Время до завершения</span>
+											<p>01:37:28</p>
+										</div>
+									</div>
+									<div class="sentence">
+										<form>
+											<input id="card1" type="number" name="sentence" max="2334" min="1" placeholder="Предложите дешевле" title="Введите число меньше текущей цены" required>
+											<input class="offer" type="submit" value="предложить">
+										</form>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="card">
+							<div class="foto">
+								<a href="profile_my_mruy.html" title="Профиль пользователя">
+									<img src="images/photo/phmy.svg" alt="foto">
+									<span class="name">
+										<img src="images/stars5.svg" alt="rating">
+										<p>Станислав</p>
+									</span>
+								</a>
+							</div>
+							<div class="message2">Ваша ставка выигрывает!</div>
+							<div class="data"><a href="details_wins_active_mruy.html" title="Детали тендера">
+								<div class="data-container">
+									<div class="action">
+										<p>Купит</p>
+									</div>
+									<div class="title-name">
+										<p>Стульчик для кормления Chicco</p>
+									</div>
+									<div class="detail">
+										<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+									</div>
+									<div class="short-container">
+										<div class="short">
+											<img src="images/cards/iccity.svg" alt="" title="Город">
+											<p title="Город">Днепропетровск</p>
+											<img src="images/cards/iccomment.svg" alt="" title="Кол-во комментариев">
+											<p title="Кол-во комментариев">14</p>
+											<img src="images/cards/icrates.svg" alt="" title="Кол-во ставок">
+											<p title="Кол-во ставок">8</p>
+											<img src="images/cards/icviews.svg" alt="" title="Кол-во просмотров">
+											<p title="Кол-во просмотров">167</p>
+										</div>
+										<div class="added">
+											<p title="Добавлено">13 июля 2015 в 09:51</p>
+										</div>
+									</div>
+								</div>
+							</a></div>
+							<label class="info" for="card2">
+								<div class="info-container">
+									<div class="info-block">
+										<div class="current_price">
+											<span>Текущая цена</span>
+											<div class="current_price-block">
+												<p>2333</p>
+												<p class="value">грн.</p>
+											</div>
+										</div>
+										<div class="time">
+											<span>Время до завершения</span>
+											<p>01:37:28</p>
+										</div>
+									</div>
+									<div class="sentence">
+										<form>
+											<input id="card2" type="number" name="sentence" max="2333" min="1" placeholder="Предложите дешевле" title="Введите число меньше текущей цены" required>
+											<input class="offer" type="submit" value="предложить">
+										</form>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="card">
+							<div class="foto">
+								<a href="profile_my_mruy.html" title="Профиль пользователя">
+									<img src="images/photo/phmy.svg" alt="foto">
+									<span class="name">
+										<img src="images/stars5.svg" alt="rating">
+										<p>Станислав</p>
+									</span>
+								</a>
+							</div>
+							<div class="message1">Ваша ставка проигрывает!</div>
+							<div class="data"><a href="details_lost_active_mruy.html" title="Детали тендера">
+								<div class="data-container">
+									<div class="action">
+										<p>Купит</p>
+									</div>
+									<div class="title-name">
+										<p>Стульчик для кормления Chicco</p>
+									</div>
+									<div class="detail">
+										<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+									</div>
+									<div class="short-container">
+										<div class="short">
+											<img src="images/cards/iccity.svg" alt="" title="Город">
+											<p title="Город">Днепропетровск</p>
+											<img src="images/cards/iccomment.svg" alt="" title="Кол-во комментариев">
+											<p title="Кол-во комментариев">14</p>
+											<img src="images/cards/icrates.svg" alt="" title="Кол-во ставок">
+											<p title="Кол-во ставок">8</p>
+											<img src="images/cards/icviews.svg" alt="" title="Кол-во просмотров">
+											<p title="Кол-во просмотров">167</p>
+										</div>
+										<div class="added">
+											<p title="Добавлено">13 июля 2015 в 09:51</p>
+										</div>
+									</div>
+								</div>
+							</a></div>
+							<label class="info" for="card3">
+								<div class="info-container">
+									<div class="info-block">
+										<div class="current_price">
+											<span>Текущая цена</span>
+											<div class="current_price-block">
+												<p>2332</p>
+												<p class="value">грн.</p>
+											</div>
+										</div>
+										<div class="time">
+											<span>Время до завершения</span>
+											<p>01:37:28</p>
+										</div>
+									</div>
+									<div class="sentence">
+										<form>
+											<input id="card3" type="number" name="sentence" max="2332" min="1" placeholder="Предложите дешевле" title="Введите число меньше текущей цены" required>
+											<input class="offer" type="submit" value="предложить">
+										</form>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+				<p class="align"></p>
+			</div>
+    </div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

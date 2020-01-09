@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/loginmenu-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<link rel="stylesheet" href="style/card-style.css">
+		<link rel="stylesheet" href="style/details-style.css">
+		<link rel="stylesheet" href="style/filter_navigation-style.css">
+		<link rel="stylesheet" href="style/popup-style.css">
+		<link rel="stylesheet" href="style/cabinet-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <script>
+	    	$(document).ready(function() {
+			    $(".all").on("change", function() {
+			        var groupId = $(this).data('id');
+			        $('.one[data-id="' + groupId + '"]').prop("checked", this.checked);
+			    });
+
+			    $(".one").on("change", function() {
+			        var groupId = $(this).data('id');
+			        var allChecked = $('.one[data-id="' + groupId + '"]:not(:checked)').length == 0;
+			        $('.all[data-id="' + groupId + '"]').prop("checked", allChecked);
+			    });
+			});
+		</script>
+		<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+		<title>Профиль пользователя</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers.html">о сайте</a>
+						<a href="filter.html">тендеры</a>
+						<a href="tariffs.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="index_ukr.html">Українська</a></li>
+								<li><a href="index_eng.html">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="login-wrapper">
+						<input type="checkbox" class="login-checkbox" id="login">
+						<div class="login">
+					    	<div class="login-content">
+					      		<label for="login" class="login-closer"></label>
+					      		<h4>Добро пожаловать!</h4>
+					      		<p>Войти:</p>
+					      		<a class="butface" href="profile_my_mruy.html">С помошью Facebook</a>
+					      		<a class="butgoog" href="#">С помошью Google+</a>
+					      		<div class="either">
+					      			<span class="lineor"></span>
+					      			<p>или</p>
+					      			<span class="lineor"></span>
+					      		</div>
+					      		<form class="logemail">
+									<input type="email" maxlength="50" placeholder="Ваш email..." required>
+									<input type="password" maxlength="50" placeholder="Пароль..." required>
+									<div class="logdop">
+										<div class="remember">
+											<input id="remember" type="checkbox" />
+											<label for="remember">Запомнить меня</label>
+										</div>
+										<a href="#">Забыли пароль?</a>
+									</div>
+									<input type="submit" value="ВОЙТИ">
+								</form>
+					      	</div>
+					  	</div>
+					</div>
+					<div class="cabinet-block">
+						<label for="login" title="Войти">
+							<div class="icon_cabinet">
+								<div class="arrow_img_cabinet"></div>
+								<div class="image_cabinet">
+									<div class="front img_cabinet">
+										<img src="images/header/iccab1.svg" alt="">
+									</div>
+									<div class="back img_cabinet">
+										<img src="images/header/iccab2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						мой кабинет</label>
+					</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">Профиль пользователя</h2>
+					<div class="navigation-menu">
+						<div class="buyer">
+							<a href="#">Покупки</a>
+						</div>
+						<div class="seller">
+							<a href="#">Продажи</a>
+						</div>
+						<div class="comments">
+							<a href="#">Отзывы</a>
+						</div>
+						<div class="profile fon">
+							<a href="profile_my.html">Профиль</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="settings-container">
+							<div class="setting">
+								<div class="foto">
+									<img src="images/photo/phmy.svg" alt="photo">
+									<div class="noname"></div>
+								</div>
+								<div class="settings-main">
+									<div class="main-block">
+										<p>Имя:</p>
+										<span>Станислав Заруденский</span>
+									</div>
+									<div class="main-block">
+										<p>Email:</p>
+										<span>szarudensky@gmail.com</span>
+									</div>
+									<div class="main-block">
+										<p>Телефон:</p>
+										<span>380963515533</span>
+									</div>
+									<div class="main-block">
+										<p>Город:</p>
+										<span>Днепропетровск</span>
+									</div>
+								</div>
+							</div>
+							<div class="statistics">
+								<div class="stat-info">
+									<div class="stat">
+										<div class="statin" title="Общий рейтинг">
+											<p>Рейтинг:</p><span><img src="images/stars5.svg" alt="rating"></span>
+										</div>
+										<div class="statin" title="Кол-во покупок в тендерах">
+											<p>Покупок:</p><span>7</span>
+										</div>
+										<div class="statin" title="Кол-во выигранных тендеров">
+											<p>Продаж:</p><span>4</span>
+										</div>
+										<div class="statin" title="Принимал участие в тендерах">
+											<p>Участий:</p><span>19</span>
+										</div>
+										<div class="statin" title="Общее кол-во сделаных предложений">
+											<p>Ставок:</p><span>32</span>
+										</div>
+									</div>
+									<div class="about_myself">
+										<p>О себе:</p>
+										<span>Честный продавец, надёжный покупатель.</span>
+									</div>
+								</div>
+							</div>
+							<div class="email-delivery">
+								<p>Подписаться на новые тендеры этого пользователя:</p>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox" type="checkbox" class="all" data-id="d1" />
+										<label for="checkbox">Все</label>
+									</div>
+								</div>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox3" type="checkbox" class="one" data-id="d1" />
+										<label for="checkbox3">Новые тендеры в категории «Авто»</label>
+									</div>
+								</div>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox4" type="checkbox" class="one" data-id="d1" />
+										<label for="checkbox4">Новые тендеры в категории «Детский мир»</label>
+									</div>
+								</div>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox5" type="checkbox" class="one" data-id="d1" />
+										<label for="checkbox5">Новые тендеры в категории «Дом, сад»</label>
+									</div>
+								</div>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox6" type="checkbox" class="one" data-id="d1" />
+										<label for="checkbox6">Новые тендеры в категории «Еда, напитки»</label>
+									</div>
+								</div>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox7" type="checkbox" class="one" data-id="d1" />
+										<label for="checkbox7">Новые тендеры в категории «Мода, сувениры»</label>
+									</div>
+								</div>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox8" type="checkbox" class="one" data-id="d1" />
+										<label for="checkbox8">Новые тендеры в категории «Спорт, здоровье»</label>
+									</div>
+								</div>
+								<div class="delivery">
+									<div class="delivery-info">
+										<input id="checkbox9" type="checkbox" class="one" data-id="d1" />
+										<label for="checkbox9">Новые тендеры в категории «Техника»</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

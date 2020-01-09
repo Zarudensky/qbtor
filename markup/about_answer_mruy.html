@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/loginmenu-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+		<title>О сайте</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index_mruy.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers_mruy.html">о сайте</a>
+						<a href="filter_mruy.html">тендеры</a>
+						<a href="tariffs_mruy.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cabinet_menu-block">
+					    <li class="cab">
+							<a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+								<div class="badge badgeup">3</div>
+								<div class="icon_cabinet_menu"></div>
+							</div>Мистер Уй</a>
+							<ul class="cabinet_menu">
+								<li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+								<li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+								<li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+                <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+								<li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+								<li><a href="about_answer.html">Выход</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+					<div class="navigation-menu">
+						<div class="buyer">
+							<a href="about_for_buyers_mruy.html">Для покупателя</a>
+						</div>
+						<div class="seller">
+							<a href="about_for_seller_mruy.html">Для продавца</a>
+						</div>
+						<div class="comments">
+							<a href="about_comments_mruy.html">Отзывы</a>
+						</div>
+						<div class="answer fon">
+							<a href="about_answer_mruy.html">Вопрос/Ответ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="question-block">
+							<div class="question">
+								<span>Что такое qbtor.com?</span>
+								<p>qbtor.com – это сервис онлайн-тендеров, который помогает покупателям находить товары по той цене, которую они готовы платить.</p>
+							</div>
+            </div>
+						<div class="question-block">
+							<div class="question">
+								<span>qbtor.com – это бесплатный сервис?</span>
+								<p>Да, это бесплатный сервис для покупателей, но у нас есть платные услуги для продавцов.</p>
+							</div>
+						</div>
+						<div class="question-block">
+							<div class="question">
+								<span>За что платит продавец?</span>
+								<p>Продавец платит только за успешную сделку в случае победы его ставки. Сумма оплаты составляет 10 грн. Также продавец может поставить ставку инкогнито, заплатив за эту услугу 1 грн. (за одну ставку).</p>
+							</div>
+						</div>
+						<div class="question-block">
+							<div class="question">
+								<span>Могут ли участвовать в тендерах мелкие продавцы, у которых нет своего интернет-магазина и даже сайта?</span>
+								<p>Да. В тендерах могут участвовать как мелкие продавцы, представители СП (совместных покупок), так и интернет-магазины, крупные компании.</p>
+							</div>
+						</div>
+						<div class="question-block">
+							<div class="question">
+								<span>Кто оплачивает доставку товара?</span>
+								<p>Доставку товара оплачивает продавец.</p>
+							</div>
+						</div>
+						<div class="question-block">
+							<div class="question">
+								<span>Насколько безопасно осуществлять сделки на qbtor.com?</span>
+								<p>Мы делаем все для того, чтобы сделки на нашем сайте были безопасными и надежными. В целях безопасности мы скрываем все контактные данные покупателя, открывая их только тому продавцу, с которым произошла удачная сделка.</p>
+							</div>
+						</div>
+						<div class="question-block">
+							<div class="question">
+								<span>Почему в тендере скрыты контактные данные покупателя?</span>
+								<p>В целях безопасности покупателя и нежелательного использования другими лицами.</p>
+							</div>
+						</div>
+						<div class="question-block">
+							<div class="question">
+								<span>Какие преимущества вашего сервиса для покупателя?</span>
+								<p>- покупка товара на своих условиях, покупатель всегда прав!<br>- возможность указывать свою цену на товар (обозначать максимальный бюджет, который вы готовы потратить)<br>- удобная и быстрая форма создания запроса<br>- доставку товара оплачивает продавец<br>- в завершении тендера, выигрывает продавец, который предлагает наименьшую цену. Но за покупателем всегда остается право выбора.</p>
+							</div>
+						</div>
+						<div class="question-block">
+							<div class="question">
+								<span>Какие преимущества вашего сервиса для продавца?</span>
+								<p>- удобная платформа для эффективной работы продавцов, с целью поиска покупателей и увеличения продаж<br>- открытый рынок, возможность честно конкурировать с другими продавцами<br>- большая база актуальных запросов, мини-тендеров от реальных покупателей<br>- «горячие покупатели», которые уже приняли решения купить конкретный товар, и хотят это совершить прямо сейчас<br>- экономия денег на рекламу и содержание отдела продаж</p>
+							</div>
+						</div>
+						<div class="comment-recall">
+							<div class="nophoto">
+								<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+							</div>
+							<form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+								<textarea rows="3" cols="140" name="text" placeholder="Напишите вопрос..."></textarea>
+								<p class="send"><input type="submit" value="Отправить"></p>
+							</form>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="Картинка">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="Картинка">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+    </div>
+	</body>
+</html>

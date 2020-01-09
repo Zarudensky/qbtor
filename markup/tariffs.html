@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/popup-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/tariffs-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+	    <title>Тарифы</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers.html">о сайте</a>
+						<a href="filter.html">тендеры</a>
+						<a href="tariffs.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="login-wrapper">
+						<input type="checkbox" class="login-checkbox" id="login">
+						<div class="login">
+					    	<div class="login-content">
+					      		<label for="login" class="login-closer"></label>
+					      		<h4>Добро пожаловать!</h4>
+					      		<p>Войти:</p>
+					      		<a class="butface" href="tariffs_mruy.html">С помошью Facebook</a>
+					      		<a class="butgoog" href="#">С помошью Google+</a>
+					      		<div class="either">
+					      			<span class="lineor"></span>
+					      			<p>или</p>
+					      			<span class="lineor"></span>
+					      		</div>
+					      		<form class="logemail">
+									<input type="email" maxlength="50" placeholder="Ваш email..." required>
+									<input type="password" maxlength="50" placeholder="Пароль..." required>
+									<div class="logdop">
+										<div class="remember">
+											<input id="remember" type="checkbox" />
+											<label for="remember">Запомнить меня</label>
+										</div>
+										<a href="#">Забыли пароль?</a>
+									</div>
+									<input type="submit" value="ВОЙТИ">
+								</form>
+					      	</div>
+					  	</div>
+					</div>
+					<div class="cabinet-block">
+						<label for="login" title="Войти">
+							<div class="icon_cabinet">
+								<div class="arrow_img_cabinet"></div>
+								<div class="image_cabinet">
+									<div class="front img_cabinet">
+										<img src="images/header/iccab1.svg" alt="">
+									</div>
+									<div class="back img_cabinet">
+										<img src="images/header/iccab2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						мой кабинет</label>
+					</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">Что? Почем?</h2>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="tariffs">
+							<div class="tariffs-container">
+								<h2>Акция:</h2>
+								<p>После регистрации сервис бесплатный - <span>3 месяца</span></p>
+								<h2 class="trffs">Тарифы:</h2>
+								<p>Создание тендера (как покупатель) - <span>бесплатно</span></p>
+								<p>Участие в тендере (как продавец) - <span>бесплатно</span></p>
+								<p>Победа в тендере (как продавец) - <span>10 грн.</span></p>
+							</div>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="image">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="image">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

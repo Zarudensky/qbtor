@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/heder-style.css">
+	<link rel="stylesheet" href="style/loginmenu-style.css">
+	<link rel="stylesheet" href="style/navigation-style.css">
+	<link rel="stylesheet" href="style/content-style.css">
+	<link rel="stylesheet" href="style/footer-style.css">
+	<link rel="stylesheet" href="style/card-style.css">
+	<link rel="stylesheet" href="style/details-style.css">
+	<link rel="stylesheet" href="style/filter_navigation-style.css">
+	<link rel="stylesheet" href="style/popup-style.css">
+	<link rel="stylesheet" href="style/cabinet-style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".all").on("change", function() {
+				var groupId = $(this).data('id');
+				$('.one[data-id="' + groupId + '"]').prop("checked", this.checked);
+			});
+
+			$(".one").on("change", function() {
+				var groupId = $(this).data('id');
+				var allChecked = $('.one[data-id="' + groupId + '"]:not(:checked)').length == 0;
+				$('.all[data-id="' + groupId + '"]').prop("checked", allChecked);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+	<title>Мой кабинет</title>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<div class="header-container">
+			<div class="logo-block">
+				<a href="index_mruy.html" title="На главную"></a>
+			</div>
+			<div class="menu-block">
+				<a href="about_for_buyers_mruy.html">о сайте</a>
+				<a href="filter_mruy.html">тендеры</a>
+				<a href="tariffs_mruy.html">тарифы</a>
+			</div>
+			<div class="newtender-block">
+				<a href="newtender_mruy.html" title="БЕСПЛАТНО">создать тендер</a>
+			</div>
+			<ul class="language-block">
+				<li class="lan">
+					<a class="lang" href="#"><div class="language" title="Язык">
+						<div class="icon_language">
+							<div class="image_language">
+								<div class="front img">
+									<img src="images/header/lngearth.svg" alt="">
+								</div>
+								<div class="back img">
+									<img src="images/header/lngrus.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</div></a>
+					<ul class="languages">
+						<li><a href="#">Українська</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="cabinet_menu-block">
+				<li class="cab">
+					<a class="cabin" href="cabinet_settings_mruy.html" title="Мой кабинет"><div class="cabinet">
+						<div class="badge badgeup">3</div>
+						<div class="icon_cabinet_menu"></div>
+					</div>Мистер Уй</a>
+					<ul class="cabinet_menu">
+						<li><a href="cabinet_buy_active_mruy.html">Мои покупки</a><div class="badge badgedown">1</div></li>
+						<li><a href="cabinet_sale_active_mruy.html">Мои продажи</a></li>
+						<li><a href="cabinet_comment_fromseller_mruy.html">Отзывы</a><div class="badge badgedown">2</div></li>
+            <li><a href="cabinet_messages_mruy.html">Сообщения</a></li>
+            <li><a href="cabinet_balance_mruy.html">Баланс</a></li>
+            <li><a href="cabinet_settings_mruy.html">Настройки</a></li>
+						<li><a href="index.html">Выход</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class= "navigation">
+		<div class="navigation-container">
+			<h2 class="title">МОЙ КАБИНЕТ</h2>
+			<div class="navigation-menu">
+				<div class="buyer">
+					<a href="cabinet_buy_active_mruy.html">Мои покупки</a>
+					<div class="badge badgedown" title="Новые события в тендере">1</div>
+				</div>
+				<div class="seller">
+					<a href="cabinet_sale_active_mruy.html">Мои продажи</a>
+				</div>
+				<div class="comments">
+					<a href="cabinet_comment_fromseller_mruy.html">Отзывы</a>
+					<div class="badge badgedown" title="Получен новый отзыв">2</div>
+				</div>
+        <div class="messages">
+          <a href="cabinet_messages_mruy.html">Сообщения</a>
+        </div>
+        <div class="tabalance">
+          <a href="cabinet_balance_mruy.html">Баланс</a>
+				</div>
+				<div class="settings fon">
+					<a href="cabinet_settings_mruy.html">Настройки</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="clearfix">
+		<div class="content">
+			<div class="content-container">
+				<div class="settings-container">
+					<div class="setting">
+						<div class="foto">
+							<a href="#" title="Изменить фотографию">
+								<img src="images/photo/phmruy.svg" alt="photo">
+								<div class="name camera">
+									<img src="images/iccamera.svg" alt="camera">
+									<p>Изменить</p>
+								</div>
+							</a>
+						</div>
+						<div class="settings-main">
+							<div class="main-block">
+								<p>Имя:</p>
+								<span>Мистер Уй</span>
+								<label class="pen" for="commentar"></label>
+							</div>
+							<div class="settings-block">
+								<input type="checkbox" id="commentar" />
+								<div class="resetting">
+									<label class="hideset" for="commentar">Сохранить</label>
+									<input type="text" name="name" maxlength="50" value="Мистер Уй">
+								</div>
+							</div>
+							<div class="main-block">
+								<p>Email:</p>
+								<span>mruy@gmail.com</span>
+								<label class="pen" for="commentar2"></label>
+							</div>
+							<div class="settings-block">
+								<input type="checkbox" id="commentar2" />
+								<div class="resetting">
+									<label class="hideset" for="commentar2">Сохранить</label>
+									<input type="email" maxlength="50" value="mruy@gmail.com">
+								</div>
+							</div>
+							<div class="main-block">
+								<p>Пароль:</p>
+								<span class="big">********</span>
+								<label class="pen" for="commentar4"></label>
+							</div>
+							<div class="settings-block">
+								<input type="checkbox" id="commentar4" />
+								<div class="resetpas">
+									<div class="newpas">
+										<p>Старый пароль:</p>
+										<input type="password" name="password" maxlength="50" value="password">
+										<label class="hideset" for="commentar4">Сохранить</label>
+									</div>
+									<div class="newpas">
+										<p>Новый пароль:</p>
+										<input type="password" name="password" maxlength="50" value="password">
+										<span class="hideset"></span>
+									</div>
+									<div class="newpas">
+										<p>Подтверждение:</p>
+										<input type="password" name="password" maxlength="50" value="password">
+										<span class="hideset"></span>
+									</div>
+								</div>
+							</div>
+							<div class="main-block">
+								<p>Телефон:</p>
+								<span>380963515533</span>
+								<label class="pen" for="commentar3"></label>
+							</div>
+							<div class="settings-block">
+								<input type="checkbox" id="commentar3" />
+								<div class="resetting">
+									<label class="hideset" for="commentar3">Сохранить</label>
+									<input type="tel" name="tel" maxlength="50" value="380963515533">
+								</div>
+							</div>
+							<div class="main-block">
+								<p>Город:</p>
+								<span>Днепропетровск</span>
+								<label class="pen" for="region-container"></label>
+							</div>
+							<div class="region-block">
+								<input type="checkbox" id="region-container" />
+								<div class="regions">
+									<div class="regionsgroup-container">
+										<div class="regionsgroup">
+											<label for="region1">Днепропетровская обл.</label>
+											<div class="city-block">
+												<input type="checkbox" id="region1" />
+												<div class="citys">
+													<div class="allcitys">
+														<label name="allcitys">Другой город</label>
+													</div>
+													<div class="citysgroup-container">
+														<div class="citysgroup">
+															<label for="city1">Днепропетровск</label>
+															<label for="city2">Кривой Рог</label>
+															<label for="city3">Днепродзержинск</label>
+															<label for="city4">Никополь</label>
+															<label for="city5">Павлоград</label>
+														</div>
+														<div class="citysgroup">
+															<label for="city6">Новомосковск</label>
+															<label for="city7">Марганец</label>
+															<label for="city8">Жёлтые Воды</label>
+															<label for="city9">Орджоникидзе</label>
+															<label for="city10">Синельниково</label>
+														</div>
+														<div class="citysgroup">
+															<label for="city11">Першотравенск</label>
+															<label for="city12">Терновка</label>
+															<label for="city13">Вольногорск</label>
+															<label for="city14">Подгородное</label>
+															<label for="city15">Пятихатки</label>
+														</div>
+														<div class="citysgroup">
+															<label for="city16">Верхнеднепровск</label>
+															<label for="city17">Апостолово</label>
+															<label for="city18">Перещепино</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<label for="region2">Киевская обл.</label>
+											<label for="region3">Одесская обл.</label>
+											<label for="region4">Харьковская обл.</label>
+											<label for="region5">Львовская обл.</label>
+											<label for="region6">Хмельницкая обл.</label>
+											<label for="region7">Запорожская обл.</label>
+										</div>
+										<div class="regionsgroup">
+											<label for="region8">Херсонская обл.</label>
+											<label for="region9">Полтавская обл.</label>
+											<label for="region10">Винницкая обл.</label>
+											<label for="region11">Николаевская обл.</label>
+											<label for="region12">Сумская обл.</label>
+											<label for="region13">Черкасская обл.</label>
+											<label for="region14">Кировоградская обл.</label>
+										</div>
+										<div class="regionsgroup">
+											<label for="region15">Черниговская обл.</label>
+											<label for="region16">Житомирская обл.</label>
+											<label for="region17">Закарпатская обл.</label>
+											<label for="region18">Ивано-Франковская обл.</label>
+											<label for="region19">Ровненская обл.</label>
+											<label for="region20">Тернопольская обл.</label>
+											<label for="region21">Черновицкая обл.</label>
+										</div>
+										<div class="regionsgroup">
+											<label for="region22">Волынская обл.</label>
+											<label for="region23">Донецкая обл.</label>
+											<label for="region24">Луганская обл.</label>
+											<label for="region25">Крым</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="statistics">
+						<div class="stat-info">
+							<div class="stat">
+								<div class="statin" title="Общий рейтинг">
+									<p>Рейтинг:</p><span><img src="images/stars4.svg" alt="rating"></span>
+								</div>
+								<div class="statin" title="Кол-во покупок в тендерах">
+									<p>Покупок:</p><span>3</span>
+								</div>
+								<div class="statin" title="Кол-во выигранных тендеров">
+									<p>Продаж:</p><span>5</span>
+								</div>
+								<div class="statin" title="Принимал участие в тендерах">
+									<p>Участий:</p><span>12</span>
+								</div>
+								<div class="statin" title="Общее кол-во сделаных предложений">
+									<p>Ставок:</p><span>47</span>
+								</div>
+							</div>
+							<div class="change-block">
+								<input type="checkbox" id="commentar5" />
+								<div class="rechange">
+									<div class="rech">
+										<textarea rows="3" cols="140" name="text">Любая информация о вас, которая может быть полезна для других.</textarea>
+										<label class="hideset" for="commentar5">Сохранить</label>
+									</div>
+								</div>
+							</div>
+							<div class="about_myself">
+								<p>О себе:</p>
+								<span>Любая информация о вас, которая может быть полезна для других.</span>
+								<label class="pen" for="commentar5"></label>
+							</div>
+						</div>
+					</div>
+					<div class="email-delivery">
+						<p>Настройки рассылки:</p>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox" type="checkbox" class="all" data-id="d1" checked />
+								<label for="checkbox">Все</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox2" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox2">Новости QBtor</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox3" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox3">Новые тендеры в категории «Авто»</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox4" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox4">Новые тендеры в категории «Детский мир»</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox5" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox5">Новые тендеры в категории «Дом, сад»</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox6" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox6">Новые тендеры в категории «Еда, напитки»</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox7" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox7">Новые тендеры в категории «Мода, сувениры»</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox8" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox8">Новые тендеры в категории «Спорт, здоровье»</label>
+							</div>
+						</div>
+						<div class="delivery">
+							<div class="delivery-info">
+								<input id="checkbox9" type="checkbox" class="one" data-id="d1" checked />
+								<label for="checkbox9">Новые тендеры в категории «Техника»</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="back-top">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer-container">
+		<div class="footer-menu-block">
+			<a href="#">FAQ</a>
+			<a href="#">О нас</a>
+			<a href="#">Контакты</a>
+			<a href="#">Размещение рекламы</a>
+		</div>
+		<div class="footer-info-block">
+			<div class="phone">
+				<img src="images/footer/ic1.svg" alt="Картинка">
+				<span>+380963515533</span>
+			</div>
+			<div class="email">
+				<img src="images/footer/ic2.svg" alt="Картинка">
+				<span>qbtor@gmail.com</span>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

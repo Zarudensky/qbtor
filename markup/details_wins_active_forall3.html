@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/heder-style.css">
+		<link rel="stylesheet" href="style/popup-style.css">
+		<link rel="stylesheet" href="style/navigation-style.css">
+		<link rel="stylesheet" href="style/footer-style.css">
+		<link rel="stylesheet" href="style/content-style.css">
+		<link rel="stylesheet" href="style/card-style.css">
+		<link rel="stylesheet" href="style/details-style.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <script>
+		$(document).ready(function(){
+			$("#back-top").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+		</script>
+	    <title>Детали тендера</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-container">
+					<div class="logo-block">
+						<a href="index.html" title="На главную"></a>
+					</div>
+					<div class="menu-block">
+						<a href="about_for_buyers.html">о сайте</a>
+						<a href="filter.html">тендеры</a>
+						<a href="tariffs.html">тарифы</a>
+					</div>
+					<div class="newtender-block">
+						<a href="newtender.html" title="БЕСПЛАТНО">создать тендер</a>
+					</div>
+					<ul class="language-block">
+					    <li class="lan">
+							<a class="lang" href="#"><div class="language" title="Язык">   	<div class="icon_language">
+									<div class="image_language">
+										<div class="front img">
+											<img src="images/header/lngearth.svg" alt="">
+										</div>
+										<div class="back img">
+											<img src="images/header/lngrus.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<ul class="languages">
+								<li><a href="#">Українська</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="login-wrapper">
+						<input type="checkbox" class="login-checkbox" id="login">
+						<div class="login">
+					    	<div class="login-content">
+					      		<label for="login" class="login-closer"></label>
+					      		<h4>Добро пожаловать!</h4>
+					      		<p>Войти:</p>
+					      		<a class="butface" href="details_wins_active_mruy.html">С помошью Facebook</a>
+					      		<a class="butgoog" href="#">С помошью Google+</a>
+					      		<div class="either">
+					      			<span class="lineor"></span>
+					      			<p>или</p>
+					      			<span class="lineor"></span>
+					      		</div>
+					      		<form class="logemail">
+									<input type="email" maxlength="50" placeholder="Ваш email..." required>
+									<input type="password" maxlength="50" placeholder="Пароль..." required>
+									<div class="logdop">
+										<div class="remember">
+											<input id="remember" type="checkbox" />
+											<label for="remember">Запомнить меня</label>
+										</div>
+										<a href="#">Забыли пароль?</a>
+									</div>
+									<input type="submit" value="ВОЙТИ">
+								</form>
+					      	</div>
+					  	</div>
+					</div>
+					<div class="cabinet-block">
+						<label for="login" title="Войти">
+							<div class="icon_cabinet">
+								<div class="arrow_img_cabinet"></div>
+								<div class="image_cabinet">
+									<div class="front img_cabinet">
+										<img src="images/header/iccab1.svg" alt="">
+									</div>
+									<div class="back img_cabinet">
+										<img src="images/header/iccab2.svg" alt="">
+									</div>
+								</div>
+							</div>
+						мой кабинет</label>
+					</div>
+			</header>
+			<div class= "navigation">
+				<div class="navigation-container">
+					<h2 class="title">Детали тендера</h2>
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="content">
+					<div class="content-container">
+						<div class="details">
+							<div class="details-container">
+								<div class="foto">
+									<a href="profile_my.html" title="Профиль пользователя">
+										<img src="images/photo/phmy.svg" alt="photo">
+										<span class="name">
+											<img src="images/stars5.svg" alt="rating">
+											<p>Станислав</p>
+										</span>
+									</a>
+								</div>
+								<div class="saving">
+									<div class="sumec">
+										<p>167</p>
+										<p class="value">грн.</p>
+									</div>
+								</div>
+								<div class="data">
+									<div class="data-container">
+										<div class="action">
+											<p>Купит</p>
+										</div>
+										<div class="title-name">
+											<p>Стульчик для кормления Chicco</p>
+										</div>
+										<div class="economy">
+											<p>Экономия</p>
+											<div class="scalec">
+												<div class="scalecw"></div>
+												<div class="scalecor"></div>
+											</div>
+										</div>
+										<div class="short-container">
+											<div class="short">
+												<img src="images/cards/iccity.svg" alt="" title="Город">
+												<p title="Город">Днепропетровск</p>
+											</div>
+											<div class="added">
+												<p>Добавлено 13 июля 2015 в 09:51:46</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<label class="info" for="card1">
+									<div class="info-container">
+										<div class="info-block">
+											<div class="current_price">
+												<span>Текущая цена</span>
+												<div class="current_price-block">
+													<p>2333</p>
+													<p class="value">грн.</p>
+												</div>
+											</div>
+											<div class="time">
+												<span>Время до завершения</span>
+												<p>01:37:28</p>
+											</div>
+										</div>
+										<div class="sentence">
+											<form>
+												<input id="card1" type="number" name="sentence" max="2333" min="1" placeholder="Предложите дешевле" title="Введите число меньше текущей цены" required>
+												<input class="offer" type="submit" value="предложить">
+											</form>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="detal-container">
+								<div class="detal-discussion">
+									<div class="discussion-block">
+										<div class="action">
+											<p>Подробное описание</p>
+										</div>
+										<div class="detailp">
+											<p>Chicco Polly phase(зеленненький). Если в Днепропетровске то заберу сам, если из другого города, тогда по Новой Почте в 19 отделении. А хотите я вам сказку расскажу? Так вот! Жили были дед да баба да внученька Маша. Не было у них ни коровки, ни свинки, никакой скотинки - одна коза. Вот раз дед послал бабку козу пасти. Она пасла, пасла и домой погнала.</p>
+										</div>
+										<div class="scan">
+											<p>Кол-во просмотров: <span>63</span></p>
+										</div>
+										<div class="tiname">
+											<p>Обсуждение</p>
+										</div>
+										<div class="comment-block">
+											<div class="photo">
+												<a href="#"><img src="images/photo/phjimcarrey.svg" alt="photo"></a>
+											</div>
+											<div class="comment-detail">
+												<div class="comment">
+													<a href="#">Jim Carrey</a>
+													<span>А дед сел у ворот да и спрашивает: - Коза моя, коза, чѐрные глаза, кривая нога,
+													острые рога, что ты ела, что пила?- Я не ела, не пила, меня бабка не пасла. Как бежала через
+													мосточек ухватила кленовый листочек, - вот и вся моя еда.</span>
+												</div>
+												<div class="date">
+													<label for="commentar"><span>13 июля 2015 г.</span>Ответить</label>
+													<div class="commentar-block">
+														<input type="checkbox" id="commentar" />
+														<div class="recomment">
+															<div class="nophoto">
+																<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+															</div>
+															<a class="recomment-clip" href="#" title="Прикрепить файл"></a>
+															<form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+																<textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+																<span class="send"><input type="submit" value="Отправить"></span>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="comment-block">
+											<div class="comment-detail">
+												<div class="comment blocker">
+													<a href="#">Станислав</a>
+													<span>Заблокировал пользователя <a href="#">Mr. Bean</a> за плохое поведение!</span>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="comment-block">
+											<div class="photo">
+												<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+											</div>
+											<div class="comment-detail">
+												<div class="comment">
+													<a href="#">Николай Петрович</a>
+													<span> Рассердился дед на внучку, раскричался, пошѐл сам козу пасти. Пас, пас,
+													досыта накормил и домой погнал.</span>
+												</div>
+												<div class="date">
+													<label for="commentar4"><span>30 мин</span>Ответить</label>
+													<div class="commentar-block">
+														<input type="checkbox" id="commentar4" />
+														<div class="recomment">
+															<div class="nophoto">
+																<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+															</div>
+															<a class="recomment-clip" href="#" title="Прикрепить файл"></a>
+															<form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+																<textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+																<span class="send"><input type="submit" value="Отправить"></span>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="comment-call">
+											<div class="nophoto">
+												<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+											</div>
+											<a class="comment-clip" href="#" title="Прикрепить файл"></a>
+											<form action="#" name="comment" accept-charset="utf-8" enctype="text/plain" method="get">
+												<textarea rows="3" cols="140" name="text" placeholder="Напишите комментарий..."></textarea>
+												<p class="send"><input type="submit" value="Отправить"></p>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="detal-rates">
+									<div class="rates-block">
+										<div class="tiname">
+											<p>Ставки</p>
+										</div>
+										<div class="line-start"></div>
+										<div class="rate-last">
+											<div class="price-lwl">
+												<p>2333</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="photo">
+												<a href="#"><img src="images/photo/phmruy.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Мистер Уй</a>
+												</div>
+												<div class="rating">
+													<img src="images/stars4.svg" alt="rating">
+												</div>
+												<div class="added">
+													<p>14 июля 2015 в 16:03:21</p>
+												</div>
+											</div>
+										</div>
+										<div class="rate">
+											<div class="price">
+												<p>2334</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="photo">
+												<a href="#"><img src="images/photo/phscott.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Seann William Scott</a>
+												</div>
+												<div class="rating">
+													<img src="images/stars1.svg" alt="rating">
+												</div>
+												<div class="added">
+													<p>14 июля 2015 в 15:46:17</p>
+												</div>
+											</div>
+										</div>
+										<div class="rate">
+                      <p class="canceled3">Эта ставка была заблокирована покупателем</p>
+											<div class="price none">
+												<p>2335</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="photo filter">
+												<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname gray2">
+													<a href="#"></a>
+												</div>
+												<div class="rating filter">
+
+												</div>
+												<div class="added">
+													<p id="gray">14 июля 2015 г. в 15:37:22</p>
+												</div>
+											</div>
+										</div>
+										<div class="rate">
+											<div class="price">
+												<p>2340</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="photo">
+												<a href="#"><img src="images/photo/phivan.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Иван Васильевич</a>
+												</div>
+												<div class="rating">
+													<img src="images/stars1.svg" alt="rating">
+												</div>
+												<div class="added">
+													<p>14 июля 2015 г. в 15:02:46</p>
+												</div>
+											</div>
+										</div>
+										<div class="rate">
+											<div class="price">
+												<p>2350</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="photo">
+												<a href="#"><img src="images/photo/phjulya.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Юлия Данилина</a>
+												</div>
+												<div class="rating">
+													<img src="images/stars2.svg" alt="rating">
+												</div>
+												<div class="added">
+													<p>14 июля 2015 г. в 12:34:05</p>
+												</div>
+											</div>
+										</div>
+										<div class="rate">
+											<div class="price">
+												<p>2400</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="photo">
+												<a href="#"><img src="images/photo/phruslan.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Ruslan Danilin</a>
+												</div>
+												<div class="rating">
+													<img src="images/stars5.svg" alt="rating">
+												</div>
+												<div class="added">
+													<p>14 июля 2015 в 10:59:21</p>
+												</div>
+											</div>
+										</div>
+										<div class="rate">
+											<div class="price">
+												<p>2450</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="photo">
+												<a href="#"><img src="images/photo/phno.svg" alt="photo"></a>
+											</div>
+											<div class="seller-info">
+												<div class="aname">
+													<a href="#">Николай Петрович</a>
+												</div>
+												<div class="rating">
+													<img src="images/stars1.svg" alt="rating">
+												</div>
+												<div class="added">
+													<p>14 июля 2015 в 10:59:21</p>
+												</div>
+											</div>
+										</div>
+										<div class="rate-start">
+											<div class="price">
+												<p>2500</p>
+												<p class="value">грн.</p>
+											</div>
+											<div class="action">
+												<p>Стартовая цена</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="back-top">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-menu-block">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+					<a href="#">Размещение рекламы</a>
+				</div>
+				<div class="footer-info-block">
+					<div class="phone">
+						<img src="images/footer/ic1.svg" alt="image">
+						<span>+380963515533</span>
+					</div>
+					<div class="email">
+						<img src="images/footer/ic2.svg" alt="image">
+						<span>qbtor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
